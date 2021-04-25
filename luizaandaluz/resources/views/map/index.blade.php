@@ -11,5 +11,6 @@
 @endsection
 
 @section('scripts')
+
 <script src="/js/map.js"></script>
 @endsection
