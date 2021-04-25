@@ -32,5 +32,7 @@
 <script src="dist/js/pages/dashboard.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
-
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key={{env('MAPS_API_KEY')}}&callback=initMap">
+</script>
 @yield('scripts')
