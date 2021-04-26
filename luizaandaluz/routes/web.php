@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\interacoes;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,4 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Route::get('/', 'LoginController@index')->name('home');
-Route::get('/', [LoginController::class,'index'])->name('home');
+//Route::get('/', [LoginController::class,'index'])->name('home');
+Route::get('/', [interacoes::class,'index'])->name('home');
+
+Route::get('/locations', [interacoes::class,'getLocations'])->name('map.locations');
