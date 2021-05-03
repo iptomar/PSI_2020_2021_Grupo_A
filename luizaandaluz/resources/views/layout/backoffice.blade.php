@@ -10,7 +10,7 @@
   @include('layout.partials._navbar')
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <aside class="main-sidebar sidebar-light-primary elevation-4">
     @include('layout.partials._sidebar')
   </aside>
 
