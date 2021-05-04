@@ -1,9 +1,15 @@
 <!-- Brand Logo -->
 <a href={{route('home')}} class="brand-link">
+<<<<<<< HEAD
     <img src="./imagem/logo.png" width="100px" length="100px">
     <span class="brand-text font-weight-bold">Luiza Andaluz</span>
 
 
+=======
+    <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+         style="opacity: .8">
+    <span class="brand-text font-weight-light">AdminLTE 3</span>
+>>>>>>> b0d06bbe84f76be778d0dfa31ae3902b51db37cf
   </a>
 
   <!-- Sidebar -->

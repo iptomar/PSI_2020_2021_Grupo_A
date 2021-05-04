@@ -1,0 +1,3 @@
+#map, .leaflet-container{
+   min-height: inherit;
+}
