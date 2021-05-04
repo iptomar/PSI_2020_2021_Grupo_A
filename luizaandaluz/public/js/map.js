@@ -1,32 +1,13 @@
 var json_locations;
-let map;
+var map;
 
 $url = window.location.origin+"/locations";
 
+map = L.map('map').setView([40.0332629,-7.8896263],7);
+
+L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=IXBp03awRrE7NSnTkCkm', {
+    attribution:'<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+}).addTo(map);
 
 
-function initMap() {
-    map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 40.0332629, lng: -7.8896263 },
-    zoom: 8,
-  });
-  $.ajax({
-    url:'/locations',
-    headers:{
-      'Content-Type': 'application/json',
-      'Accept': 'application/json',
-    },
-    success: function(data){
-      $.each()
-      
-        $.each(data, function (index,info){
-          var myLatLng = { lat: parseFloat(info.lat), lng: parseFloat(info.lng) };
-          new google.maps.Marker({
-            position: myLatLng,
-            map,
-            title: "Hello World!",
-          });
-        }); 
-    }
-  });
-}
+
