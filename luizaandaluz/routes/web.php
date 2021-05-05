@@ -19,4 +19,6 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/', [LoginController::class,'index'])->name('home');
 Route::get('/', [interacoes::class,'index'])->name('home');
 
+
+Route::post('/store', [interacoes::class,'store'])->name('map.interaction');
 Route::get('/locations', [interacoes::class,'getLocations'])->name('map.locations');
