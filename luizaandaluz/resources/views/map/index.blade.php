@@ -1,16 +1,21 @@
 @extends('layout.backoffice')
 
 @section('css')
-<link href="/css/map.css" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/map.css">
 @endsection
 
 @section('content')
-
-<div id="map"> </div>
-
+<div id="map"></div>
+@include('map._modal')
 @endsection
 
 @section('scripts')
-
 <script src="/js/map.js"></script>
+@if(isset($message))
+        <script>
+            var json_messages = {{json_encode($message)}}?>
+        </script>
+@endif
+
+<script src="/js/toast.js"></script>
 @endsection

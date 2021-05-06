@@ -32,6 +32,5 @@
 </div>
 <!-- ./wrapper -->
 @include('layout.partials._javascript')
-@yield('javascript')
 </body>
 </html>
