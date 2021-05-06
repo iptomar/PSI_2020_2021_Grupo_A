@@ -1,5 +1,7 @@
 @extends('layout.frontpage')
 
+@section('title', lang('fullstack.title'))
+
 @section('css')
 <link rel="stylesheet" href="/css/map.css">
 @endsection

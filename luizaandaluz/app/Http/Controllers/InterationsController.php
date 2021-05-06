@@ -4,22 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Domains\Maps\Services\interactionsService;
 use App\Models\Maps\Interations;
-use App\Models\Maps\Locations;
-use Exception;
 use Illuminate\Http\Request;
 
 
-class interacoes extends Controller
+class InterationsController extends Controller
 {
     private $service;
     public function __construct(){
         $this->service = new interactionsService();
     }
 
-    public function index(Request $request)
+    public function index()
     {
-        $message = ['bg-danger'=>['title'=>'Error','text'=>'This is a text']];
-        return view('map.index')->with('message',json_encode($message));
         return view('map.index');
     }
 

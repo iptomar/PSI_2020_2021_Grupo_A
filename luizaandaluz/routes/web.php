@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\interacoes;
+use App\Http\Controllers\InterationsController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,8 +17,13 @@ use Illuminate\Support\Facades\Route;
 
 //Route::get('/', 'LoginController@index')->name('home');
 //Route::get('/', [LoginController::class,'index'])->name('home');
-Route::get('/', [interacoes::class,'index'])->name('home');
+Route::get('/', [InterationsController::class,'index'])->name('home');
 
 
-Route::post('/store', [interacoes::class,'store'])->name('map.interaction');
-Route::get('/locations', [interacoes::class,'getLocations'])->name('map.locations');
+Route::post('/store', [InterationsController::class,'store'])->name('map.interaction');
+Route::get('/locations', [InterationsController::class,'getLocations'])->name('map.locations');
+
+Route::get('locale/{locale}',function($locale){
+    session(['locale'=>$locale]);
+    return redirect()->back();
+});
