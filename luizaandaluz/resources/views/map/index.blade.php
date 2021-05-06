@@ -13,7 +13,7 @@
 <script src="/js/map.js"></script>
 @if(isset($message))
         <script>
-            var json_messages = {{json_encode($message)}}?>
+            var json_messages = {!!json_encode($message)!!}
         </script>
 @endif
 
