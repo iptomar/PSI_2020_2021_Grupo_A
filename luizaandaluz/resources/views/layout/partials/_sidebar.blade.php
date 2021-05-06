@@ -2,7 +2,7 @@
 <a href={{route('home')}} class="brand-link">
     <img src="./imagem/logo.png" width="100px" length="100px">
     <span class="brand-text font-weight-bold">Luiza Andaluz</span>
-  </a>
+</a>
 
   <!-- Sidebar -->
   <div class="sidebar">
