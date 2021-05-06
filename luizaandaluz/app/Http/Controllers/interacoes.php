@@ -18,8 +18,6 @@ class interacoes extends Controller
 
     public function index(Request $request)
     {
-        $message = ['bg-danger'=>['title'=>'Error','text'=>'This is a text']];
-        return view('map.index')->with('message',json_encode($message));
         return view('map.index');
     }
 
