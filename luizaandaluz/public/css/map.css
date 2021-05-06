@@ -1,4 +1,6 @@
-#map{
-    height: 400px;
-    width: 100%;
+#map, .leaflet-container{
+   min-height: inherit;
+}
+#map, .leaflet-container{
+   min-height: inherit;
 }
