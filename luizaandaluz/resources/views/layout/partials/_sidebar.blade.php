@@ -1,7 +1,7 @@
 <!-- Brand Logo -->
-<a href={{route('home')}} class="brand-link">
-    <img src="./imagem/logo.png" width="100px" length="100px">
-    <span class="brand-text font-weight-bold">Luiza Andaluz</span>
+<a href={{route('home')}} class="brand-link text-center">
+    <img src="./imagem/logov2.png" width="50px" height="50px">
+    <span class="brand-text font-weight-bold">Fundação Luiza Andaluz</span>
 </a>
 
   <!-- Sidebar -->
@@ -27,8 +27,7 @@
           <a href="#" class="nav-link">
             <i class="nav-icon"></i>
             <p>
-              @lang('sidebar.arquive')
-              <i class="right fas fa-angle-left"></i>
+              Pedidos
             </p>
           </a>
           <ul class="nav nav-treeview">
