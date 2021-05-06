@@ -1,7 +1,0 @@
-@media only screen and (min-width:992px)
-{.sidebar-mini.sidebar-collapse .main-sidebar,.sidebar-mini.sidebar-collapse .main-sidebar .brand-link {
-    width: 7rem !important;
-}
-.sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .main-footer, .sidebar-mini.sidebar-collapse .main-header {
-    margin-left: 7rem !important;
-}}

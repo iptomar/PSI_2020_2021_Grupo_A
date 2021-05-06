@@ -3,11 +3,18 @@ var map;
 
 $url = window.location.origin+"/locations";
 
-map = L.map('map').setView([40.0332629,-7.8896263],7);
-
+map = L.map('map',{worldCopyJump: true,maxBounds: [
+    //south west
+    [-84.0, -180],
+    //north east
+    [85.0, 180]
+]
+}).setView([40.0332629,-7.8896263],7);
 L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=IXBp03awRrE7NSnTkCkm', {
+    minZoom: 3,
     attribution:'<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
 }).addTo(map);
+
 
 updateMarkers();
 

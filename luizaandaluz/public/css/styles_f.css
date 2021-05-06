@@ -1,0 +1,21 @@
+.content-wrapper{
+    margin-left: 0px !important;
+    min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px)) !important;
+}
+
+footer{
+    margin-left: 0px !important;
+}
+@font-face {
+    font-family: rabisco;
+    src: url(../font/HerrVonMuellerhoff-Regular.ttf);
+}
+
+.brand-link{
+    padding: 0px;
+}
+
+.brand-text{
+    margin-left: 8px;
+    font-family: rabisco;
+}
