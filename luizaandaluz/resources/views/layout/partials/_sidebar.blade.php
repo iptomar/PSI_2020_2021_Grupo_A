@@ -1,7 +1,7 @@
 <!-- Brand Logo -->
 <a href={{route('home')}} class="brand-link text-center">
     <img src="./imagem/logov2.png" width="50px" height="50px">
-    <span class="brand-text font-weight-bold">Fundação Luiza Andaluz</span>
+    <span class="brand-text font-weight-bold">@lang('fullstack.logo')</span>
 </a>
 
   <!-- Sidebar -->
@@ -24,50 +24,21 @@
              with font-awesome or any other icon font library -->
 
         <li class="nav-item has-treeview">
-          <a href="#" class="nav-link">
-            <i class="nav-icon"></i>
-            <p>
-              Pedidos
+          <a href="#" class="nav-link text-left">
+            <i class="nav-icon fas fa-envelope"></i>
+            <p class="font-weight-bold">
+                @lang('backoffice.side-interation')
             </p>
           </a>
-          <ul class="nav nav-treeview">
-            <li class="nav-item has-treeview">
-              <a href="#" class="nav-link">
-                <i class="fas fa-database nav-icon"></i>
-                <p>
-                  @lang('sidebar.db')
-                  <i class="right fas fa-angle-left"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="fas fa-sync nav-icon"></i>
-                    <p>@lang('sidebar.update')</p>
-                  </a>
-                </li>
-                <!--<li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
-                    <p>Level 3</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-dot-circle nav-icon"></i>
-                    <p>Level 3</p>
-                  </a>
-                </li>-->
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="fas fa-book-open nav-icon"></i>
-                <p>@lang('sidebar.cat')</p>
-              </a>
-            </li>
-          </ul>
         </li>
+        <li class="nav-item has-treeview">
+            <a href="#" class="nav-link text-left">
+              <i class="nav-icon fas fa-user"></i>
+              <p class="font-weight-bold">
+                @lang('backoffice.side-mod')
+              </p>
+            </a>
+          </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
