@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
-    @include('layout.partials._head')
+    @include('layout.partials._head_f')
 
     @yield('css')
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="layout-footer-fixed layout-top-nav">
 <div class="wrapper">
-  @include('layout.partials._navbar')
-
-  <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-light-primary elevation-4">
-    @include('layout.partials._sidebar')
-  </aside>
+  @include('layout.partials._navbar_f')
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-        @include('layout.partials._header')
+  <div class="content-wrapper" >
         @yield('content')
   </div>
+
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     @include('layout.partials._footer')

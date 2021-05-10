@@ -1,0 +1,13 @@
+@font-face {
+    font-family: rabisco;
+    src: url(../font/HerrVonMuellerhoff-Regular.ttf);
+}
+
+.brand-link{
+    padding: 0px;
+}
+
+.brand-text{
+    margin-left: 8px;
+    font-family: rabisco;
+}

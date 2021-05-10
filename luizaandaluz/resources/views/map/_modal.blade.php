@@ -2,7 +2,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title left">Create</h4>
+                <h4 class="modal-title left">@lang('frontoffice.formCreate')</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
             <form id="interactionForm">
@@ -13,21 +13,21 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-sm-12">
-                            <label for="title">Title</label>
+                            <label for="title">@lang('frontoffice.formTitle')</label>
                             <input type="text" name="title" class="form-control form-control-sm"  id='title'/>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <label for="description">Description</label>
+                            <label for="description">@lang('frontoffice.formDescription')</label>
                             <textarea id="description" class="form-control" name="description" rows="3"></textarea>
                         </div>
                     </div>
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="submit" id="saveBtn" class="btn btn-primary">Save changes</a>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">@lang('fullstack.close')</button>
+                    <button type="submit" id="saveBtn" class="btn btn-primary">@lang('fullstack.send')</a>
                 </div>
             </form>
         </div><!-- /.modal-content -->
