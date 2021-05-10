@@ -15,6 +15,9 @@
           <a class="nav-link" href="#">@lang('frontoffice.foundation')</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="#">@lang('frontoffice.history')</a>
+          </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">@lang('frontoffice.contact')</a>
         </li>
       </ul>

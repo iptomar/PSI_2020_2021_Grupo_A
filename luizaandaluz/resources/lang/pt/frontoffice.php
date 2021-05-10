@@ -3,8 +3,8 @@
 return [
     'home' => 'Início',
     'foundation' => 'Fundação',
-    'contact' => 'Contato',
-
+    'contact' => 'Contacto',
+    'history'=> 'História',
     'formCreate' => 'Criar Interação',
     'formTitle' => 'Título',
     'formDescription' => 'Descrição',
