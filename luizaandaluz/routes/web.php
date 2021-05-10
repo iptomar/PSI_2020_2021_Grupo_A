@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\InterationsController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,10 @@ Route::get('/', [InterationsController::class,'index'])->name('home');
 
 Route::post('/store', [InterationsController::class,'store'])->name('map.interaction');
 Route::get('/locations', [InterationsController::class,'getLocations'])->name('map.locations');
+Route::get('/map', [InterationsController::class,'index'])->name('map');
+Route::get('/history', [HistoryController::class,'index'])->name('history');
+Route::get('/foundation', [HistoryController::class,'index'])->name('foundation');
+Route::get('/contact', [HistoryController::class,'index'])->name('contact');
 
 Route::get('locale/{locale}',function($locale){
     session(['locale'=>$locale]);
