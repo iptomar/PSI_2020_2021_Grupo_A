@@ -9,16 +9,16 @@
     <div class="collapse navbar-collapse" id="navbarsExample03">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">@lang('frontoffice.home')</a>
+          <a class="nav-link" href="{{route('map')}}">@lang('frontoffice.home')</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">@lang('frontoffice.foundation')</a>
+          <a class="nav-link" href="{{route('foundation')}}">@lang('frontoffice.foundation')</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">@lang('frontoffice.history')</a>
+            <a class="nav-link" href="{{route('history')}}">@lang('frontoffice.history')</a>
           </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">@lang('frontoffice.contact')</a>
+          <a class="nav-link" href="{{route('contact')}}">@lang('frontoffice.contact')</a>
         </li>
       </ul>
       <div class="form-inline my-2 my-md-0">
