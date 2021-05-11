@@ -9,6 +9,8 @@ return [
     'formTitle' => 'Título',
     'formDescription' => 'Descrição',
 
+    'titleContact' => 'Contactos:',
+
     'infContact' => '
     Telefone: 243 323 096
     E-mail: f.luiza.andaluz@sapo.pt

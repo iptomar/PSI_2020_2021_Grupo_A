@@ -21,7 +21,7 @@ footer{
 }
 
 .brand-texto{
-    margin-left: 400px;
+    margin-left: 500px;
     margin-right: 100px;
     font-size: medium;
     font-family: verdana;
@@ -29,6 +29,7 @@ footer{
 }
 
 .brand-titulo{
+    margin-left: 400px;
     font-size: 40px;
     font-family: brush script mt;
     font-weight: bolder;
@@ -39,7 +40,7 @@ footer{
 }
 
 .brand-img{
-    background-image: image('./imagem/luiza.png');
+    background: url('../imagem/luiza.jpg');
     background-position: left;
     background-repeat: no-repeat;
 }
