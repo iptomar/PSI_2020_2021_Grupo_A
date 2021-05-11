@@ -11,13 +11,10 @@ return [
 
     'titleContact' => 'Contactos:',
 
-    'infContact' => '
-    Telefone: 243 323 096
-    E-mail: f.luiza.andaluz@sapo.pt
-
-    Morada: Rua das Esteiras nº 1
-    Código Postal: 2000-078 Santarém
-    ',
+    'infContact' => 'Telefone: 243 323 096',
+    'infMail' => 'E-mail: f.luiza.andaluz@sapo.pt',
+    'infAddress' => 'Morada: Rua das Esteiras nº 1',
+    'infPostal' => 'Código Postal: 2000-078 Santarém',
 
     'titleHistory'=> '"Retalhos" históricos da Fundação Luiza Andaluz',
 
