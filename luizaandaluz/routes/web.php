@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\FoundationController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\InterationsController;
 use App\Http\Controllers\LoginController;
