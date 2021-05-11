@@ -19,3 +19,29 @@ footer{
     margin-left: 8px;
     font-family: rabisco;
 }
+
+.brand-texto{
+    margin-left: 400px;
+    margin-right: 100px;
+    font-size: medium;
+    font-family: verdana;
+    font-weight: normal;
+}
+
+.brand-titulo{
+    font-size: 40px;
+    font-family: brush script mt;
+    font-weight: bolder;
+}
+
+.brand-page{
+    height: 609px;
+}
+
+.brand-img{
+    background-image: image('./imagem/luiza.png');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+
