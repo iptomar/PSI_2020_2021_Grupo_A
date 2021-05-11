@@ -25,8 +25,8 @@ Route::post('/store', [InterationsController::class,'store'])->name('map.interac
 Route::get('/locations', [InterationsController::class,'getLocations'])->name('map.locations');
 Route::get('/map', [InterationsController::class,'index'])->name('map');
 Route::get('/history', [HistoryController::class,'index'])->name('history');
-Route::get('/foundation', [HistoryController::class,'index'])->name('foundation');
-Route::get('/contact', [HistoryController::class,'index'])->name('contact');
+Route::get('/foundation', [FoundationController::class,'index'])->name('foundation');
+Route::get('/contact', [ContactController::class,'index'])->name('contact');
 
 Route::get('locale/{locale}',function($locale){
     session(['locale'=>$locale]);
