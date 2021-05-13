@@ -30,16 +30,14 @@ return [
     'visonFoundation' => 'Sermos uma resposta social especializada no acolhimento e desenvolvimento pleno das competências pessoais e sociais das crianças e jovens, facilitando e estimulando a sua autonomia, preparando um futuro melhor, na transmissão dos valores assentes na doutrina social da igreja.',
 
     'titleValues' => 'Valores',
-    'values' => 'Valores baseados nas leis estruturantes da sociedade segundo a Doutrina Social da Igreja:
-
-    Respeito pela dignidade humana;
-    Solidariedade;
-    Justiça e Bem-Estar Social;
-    Cooperação;
-    Verdade;
-    Disponibilidade;
-    Fé Cristã.
-    ',
+    'values' => 'Valores baseados nas leis estruturantes da sociedade segundo a Doutrina Social da Igreja:',
+    'values-respect'=>'Respeito pela dignidade humana',
+    'values-solidarity'=>'Solidariedade',
+    'values-justice'=>'Justiça e Bem-Estar Social',
+    'values-coop'=>'Cooperação',
+    'values-truth'=>'Verdade',
+    'values-disponibility'=>'Disponibilidade',
+    'values-faith'=>'Fé Cristã',
 
     'titleMission' => 'Missão',
     'missionFoundation' => 'A Fundação Luiza Andaluz tem como missão acolher crianças e jovens que se encontram em situação legal de risco, protegendo, cuidando, educando e transmitindo esperança para a construção do seu futuro, tendo em conta as suas características pessoais e sociais.',
