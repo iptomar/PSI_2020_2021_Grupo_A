@@ -1,3 +1,178 @@
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Extra Light'), url('../font/ITCAvantGardeStdXLt.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Extra Light Condensed'), url('../font/ITCAvantGardeStdXLtCn.woff') format('woff');
+    }
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Extra Light Condensed Oblique'), url('../font/ITCAvantGardeStdXLtCnObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Extra Light Oblique'), url('../font/ITCAvantGardeStdXLtObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Book'), url('../font/../font/ITCAvantGardeStdBk.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Book Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Book Condensed'), url('../font/../font/ITCAvantGardeStdBkCn.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Book Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Book Condensed Oblique'), url('../font/ITCAvantGardeStdBkCnObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Book Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Book Oblique'), url('../font/ITCAvantGardeStdBkObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Medium'), url('../font/ITCAvantGardeStdMd.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Medium Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Medium Condensed'), url('../font/ITCAvantGardeStdMdCn.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Medium Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Medium Condensed Oblique'), url('../font/ITCAvantGardeStdMdCnObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Medium Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Medium Oblique'), url('../font/ITCAvantGardeStdMdObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Demi'), url('../font/ITCAvantGardeStdDemi.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Demi Condensed'), url('../font/ITCAvantGardeStdDemiCn.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Demi Condensed Oblique'), url('../font/ITCAvantGardeStdDemiCnObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Demi Oblique'), url('../font/ITCAvantGardeStdDemiObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Bold'), url('../font/ITCAvantGardeStdBold.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Bold Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Bold Condensed'), url('../font/ITCAvantGardeStdBoldCn.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Bold Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Bold Condensed Oblique'), url('../font/ITCAvantGardeStdBoldCnObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Bold Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Bold Oblique'), url('../font/ITCAvantGardeStdBoldObl.woff') format('woff');
+    }
+
+	@font-face {
+    font-family: 'HerrVonMuellerhoff-Regular';
+	font-style: normal;
+    font-weight: normal;
+    src:  url('../font/HerrVonMuellerhoff-Regular.ttf');
+	}
+
+	@font-face {
+    font-family: 'MrDeHaviland-Regular';
+    src: url('../font/MrDeHaviland-Regular.ttf');
+	}
+
+	@font-face {
+    font-family: 'Morning Glory';
+    src: url('../font/Morning Glory.ttf');
+	}
+
 .content-wrapper{
 
     margin-left: 0px !important;
@@ -7,10 +182,6 @@
 footer{
     margin-left: 0px !important;
 }
-@font-face {
-    font-family: rabisco;
-    src: url(../font/HerrVonMuellerhoff-Regular.ttf);
-}
 
 .brand-link{
     padding: 0px;
@@ -18,7 +189,7 @@ footer{
 
 .brand-text{
     margin-left: 8px;
-    font-family: rabisco;
+    font-family: 'HerrVonMuellerhoff-Regular';
 }
 
 .brand-texto{
@@ -58,7 +229,7 @@ footer{
         left: 60%; top: 30%;
         transform: translate(-60%, -30%);
         width: 33%; height: auto;
-        font-family: rabisco;
+        font-family: 'HerrVonMuellerhoff-Regular';
     }
 
     .img-container.contact .img-title{
@@ -66,14 +237,14 @@ footer{
         left: 60%; top: 30%;
         transform: translate(-30%, -65%);
         width: 33%; height: auto;
-        font-family: rabisco;
+        font-family: 'HerrVonMuellerhoff-Regular';
     }
     .img-container.history .img-title{
         position: absolute;
         left: 55%;top: 30%;
         transform: translate(-55%, -30%);
         width: 33%; height: auto;
-        font-family: rabisco;
+        font-family: 'HerrVonMuellerhoff-Regular';
     }
 
     .img-title span{
@@ -104,13 +275,18 @@ footer{
     .content-wrapper{
         margin-top: 10px;
     }
-    .card .foudation{
+    .card.foundation{
         border-radius: 15%;
         background-color: transparent;
     }
 
     .card.history{
         border-radius: 10%;
+        background-color: transparent;
+    }
+
+    .card.contact{
+        border-radius: 15%;
         background-color: transparent;
     }
 
