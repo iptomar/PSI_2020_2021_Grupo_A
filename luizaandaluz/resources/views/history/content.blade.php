@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="img-container history">
+    <div class="img-container">
         <div class="img-title">
             <span>@lang('frontoffice.history')<span>
         </div>
