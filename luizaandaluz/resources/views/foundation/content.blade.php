@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="img-container foundation">
+    <div class="img-container">
 
         <div class="img-title">
             <span>@lang('frontoffice.foundation')<span>
