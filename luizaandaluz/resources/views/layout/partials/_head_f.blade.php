@@ -8,7 +8,7 @@
 
 
 
-<link rel = "icon" type = "image/png" href = "/imagem/bola.png">
+<link rel = "icon" type = "image/png" href = "/imagem/FAVICON-LACC-YELLOW.png">
 
 <!-- Tell the browser to be responsive to screen width -->
 <meta name="viewport" content="width=device-width, initial-scale=1">

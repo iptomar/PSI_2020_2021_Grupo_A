@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <a href={{route('home')}} class="brand-link">
-        <img src="./imagem/original.png"  width="151px" height="84px">
+        <img src="./imagem/LOGO-LACC.png"  width="150px">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
