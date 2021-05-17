@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
     <a href={{route('home')}} class="brand-link">
-        <img src="./imagem/logov2.png" width="12%" height="12%">
+        <img src="./imagem/logo_origin.png" width="207px" height="12%">
         <span class="brand-text font-weight-bold">@lang('fullstack.logo')</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
