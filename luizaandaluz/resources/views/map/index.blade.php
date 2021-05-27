@@ -3,12 +3,12 @@
 @section('title', lang('fullstack.title'))
 
 @section('css')
-<link rel="stylesheet" href="/css/map.css">
+    <link rel="stylesheet" href="/css/map.css">
 @endsection
 
 @section('content')
-<div id="map"></div>
-@include('map._modal')
+    <div id="map"></div>
+    @include('map._modal')
 @endsection
 
 @section('scripts')

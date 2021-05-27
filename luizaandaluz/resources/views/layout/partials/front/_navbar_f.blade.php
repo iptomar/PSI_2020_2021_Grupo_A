@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <a href={{route('home')}} class="brand-link">
-        <img src="./imagem/LOGO-LACC.png"  width="150px">
+    <a href={{route('map.map')}} class="brand-link">
+        <img src="{{ asset('imagem/LOGO-LACC.png') }}"  width="150px">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarsExample03">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="{{route('map')}}">@lang('frontoffice.home')</a>
+          <a class="nav-link" href="{{route('map.map')}}">@lang('frontoffice.home')</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{route('foundation')}}">@lang('frontoffice.foundation')</a>

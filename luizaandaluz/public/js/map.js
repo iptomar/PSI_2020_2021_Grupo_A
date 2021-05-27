@@ -40,7 +40,7 @@ $('#interactionForm').submit(function(e){
         }
      });
 
-    $.post('/store',inputs,function(data,status){
+    $.post('map/store',inputs,function(data,status){
         toast(data);
         resetMarkers();
         $('#interationMap').modal('toggle');
@@ -53,7 +53,7 @@ function clearForm(){
 }
 function updateMarkers(){
     $.ajax({
-        url:'/locations',
+        url:'map/locations',
         headers:{
             'Content-Type': 'application/json',
             'Accept': 'application/json',
