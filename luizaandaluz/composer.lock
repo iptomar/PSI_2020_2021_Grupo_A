@@ -6,7 +6,6 @@
     ],
     "content-hash": "7a8f4656a329e927658d2e4aba371889",
     "packages": [
-        {
             "name": "almasaeed2010/adminlte",
             "version": "v3.1.0",
             "source": {
