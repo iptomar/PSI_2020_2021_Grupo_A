@@ -1,14 +1,190 @@
+@font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Extra Light'), url('../font/ITCAvantGardeStdXLt.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Extra Light Condensed'), url('../font/ITCAvantGardeStdXLtCn.woff') format('woff');
+    }
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Extra Light Condensed Oblique'), url('../font/ITCAvantGardeStdXLtCnObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Extra Light Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Extra Light Oblique'), url('../font/ITCAvantGardeStdXLtObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Book'), url('../font/../font/ITCAvantGardeStdBk.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Book Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Book Condensed'), url('../font/../font/ITCAvantGardeStdBkCn.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Book Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Book Condensed Oblique'), url('../font/ITCAvantGardeStdBkCnObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Book Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Book Oblique'), url('../font/ITCAvantGardeStdBkObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Medium'), url('../font/ITCAvantGardeStdMd.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Medium Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Medium Condensed'), url('../font/ITCAvantGardeStdMdCn.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Medium Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Medium Condensed Oblique'), url('../font/ITCAvantGardeStdMdCnObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Medium Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Medium Oblique'), url('../font/ITCAvantGardeStdMdObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Demi'), url('../font/ITCAvantGardeStdDemi.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Demi Condensed'), url('../font/ITCAvantGardeStdDemiCn.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Demi Condensed Oblique'), url('../font/ITCAvantGardeStdDemiCnObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Demi Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Demi Oblique'), url('../font/ITCAvantGardeStdDemiObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Bold'), url('../font/ITCAvantGardeStdBold.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Bold Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Bold Condensed'), url('../font/ITCAvantGardeStdBoldCn.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Bold Condensed Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Bold Condensed Oblique'), url('../font/ITCAvantGardeStdBoldCnObl.woff') format('woff');
+    }
+
+
+    @font-face {
+    font-family: 'ITC Avant Garde Gothic Std Bold Oblique';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ITC Avant Garde Gothic Std Bold Oblique'), url('../font/ITCAvantGardeStdBoldObl.woff') format('woff');
+    }
+
+	@font-face {
+    font-family: 'HerrVonMuellerhoff-Regular';
+	font-style: normal;
+    font-weight: normal;
+    src:  url('../font/HerrVonMuellerhoff-Regular.ttf');
+	}
+
+	@font-face {
+    font-family: 'MrDeHaviland-Regular';
+    src: url('../font/MrDeHaviland-Regular.ttf');
+	}
+
+	@font-face {
+    font-family: 'Morning Glory';
+    src: url('../font/Morning Glory.ttf');
+	}
+
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
 .content-wrapper{
+
     margin-left: 0px !important;
     min-height: calc(100vh - calc(3.5rem + 1px) - calc(3.5rem + 1px)) !important;
+    background-color: #fff;
 }
-
 footer{
     margin-left: 0px !important;
-}
-@font-face {
-    font-family: rabisco;
-    src: url(../font/HerrVonMuellerhoff-Regular.ttf);
 }
 
 .brand-link{
@@ -17,5 +193,166 @@ footer{
 
 .brand-text{
     margin-left: 8px;
-    font-family: rabisco;
+    font-family: 'HerrVonMuellerhoff-Regular';
+}
+
+.brand-texto{
+    font-size: medium;
+    font-family: verdana;
+    font-weight: normal;
+}
+
+.brand-titulo{
+    font-family: brush script mt;
+    font-weight: bolder;
+}
+@media only screen and (min-width: 700px) {
+    .img-container{
+            width: 100%;
+            background-position: center bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+    }
+
+    .img-container{
+        height: 400px;
+        background-image: url(../imagem/fundo_pagina.png);
+        background-position: center;
+    }
+
+    .img-container .img-title{
+        position: absolute;
+        left: 90%; top: 35%;
+        transform: translate(-90%, -35%);
+        width: 33%; height: auto;
+        font-family: 'HerrVonMuellerhoff-Regular';
+    }
+
+    .img-title span{
+        font-size: 154px;
+        font-weight: bold;
+    }
+
+    .card.foundation{
+        border-radius: 15%;
+        margin-top: -70px;
+        background-color: transparent;
+    }
+
+    .card.history{
+        border-radius: 10%;
+        background-color: transparent;
+    }
+
+    .card.contact{
+        border-radius: 10%;
+        background-color: transparent;
+    }
+}
+@media only screen and (max-width: 700px){
+    .img-container{
+        display: none;
+    }
+    .content-wrapper{
+        margin-top: 10px;
+    }
+    .card.foundation{
+        border-radius: 15%;
+        background-color: transparent;
+    }
+
+    .card.history{
+        border-radius: 10%;
+        background-color: transparent;
+    }
+
+    .card.contact{
+        border-radius: 15%;
+        background-color: transparent;
+    }
+
+}
+.brand-luiza{
+    margin-left: 840px;
+}
+
+.card-header{
+    font-weight: bold;
+}
+
+.card-body{
+    font-size: 14px !important;
+}
+
+.card-vision{
+    border: 2px solid rgba(255,238,184,0.8);
+}
+.card-vision .card-header{
+    background-color: rgba(255,238,184,0.3);
+    border-top-left-radius: 15% 55%;
+    border-top-right-radius: 15% 55%;
+}
+.card-vision .card-body{
+    background-color: rgba(255,238,184,0.15);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+.card-mission{
+    border: 2px solid rgba(219,112,147,0.8);
+}
+.card-mission .card-header{
+    background-color: rgba(219,112,147,0.3);
+    border-top-left-radius: 15% 55%;
+    border-top-right-radius: 15% 55%;
+}
+.card-mission .card-body{
+    background-color: rgba(219,112,147,0.15);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+.card-value{
+    border: 2px solid rgba(204,253,204,0.8);
+}
+.card-value .card-header{
+    background-color: rgba(204,253,204,0.3);
+
+    border-top-left-radius: 15% 55%;
+    border-top-right-radius: 15% 55%;
+}
+.card-value .card-body{
+    background-color: rgba(204,253,204,0.15);
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+.card-history{
+    border: 2px solid rgba(249,238,192,0.8);
+}
+.card-history .card-header{
+    background-color: rgba(249,238,192,0.3);
+
+    border-top-left-radius: 10% 55%;
+    border-top-right-radius: 10% 55%;
+}
+.card-history .card-body{
+    background-color: rgba(249,238,192,0.15);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.card-contact{
+    border: 2px solid rgba(254,184,28,0.8);
+}
+.card-contact .card-header{
+    background-color: rgba(254,184,28,0.3);
+
+    border-top-left-radius: 10% 55%;
+    border-top-right-radius: 10% 55%;
+}
+.card-contact .card-body{
+    background-color: rgba(254,184,28,0.15);
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
 }

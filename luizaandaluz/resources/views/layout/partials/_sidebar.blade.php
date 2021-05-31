@@ -1,6 +1,6 @@
 <!-- Brand Logo -->
 <a href={{route('home')}} class="brand-link text-center">
-    <img src="./imagem/logov2.png" width="50px" height="50px">
+    <img src="./imagem/LOGO-LACC.png" width="50px" height="50px">
     <span class="brand-text font-weight-bold">@lang('fullstack.logo')</span>
 </a>
 
