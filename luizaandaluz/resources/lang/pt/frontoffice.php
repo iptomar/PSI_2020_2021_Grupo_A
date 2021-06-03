@@ -8,6 +8,7 @@ return [
     'formCreate' => 'Criar Interação',
     'formTitle' => 'Título',
     'formDescription' => 'Descrição',
+    'group' => 'Grupo',
 
     'titleContact' => 'Contactos:',
 
@@ -27,7 +28,7 @@ return [
     As meninas que passaram pela Fundação sabem-se herdeiras de uma riquíssima história da qual são as primeiras protagonistas, uma história feita de pequenas e grandes vitórias que só a luta e a persistência de Luiza Andaluz e da comunidade educativa ao longo dos anos tornou possíveis, pugnando pela sua dignidade e por garantir espaço e meios adequados ao seu crescimento.',
 
     'titleVision' => 'Visão',
-    'visonFoundation' => 'Sermos uma resposta social especializada no acolhimento e desenvolvimento pleno das competências pessoais e sociais das crianças e jovens, facilitando e estimulando a sua autonomia, preparando um futuro melhor, na transmissão dos valores assentes na doutrina social da igreja.',
+    'visionFoundation' => 'Sermos uma resposta social especializada no acolhimento e desenvolvimento pleno das competências pessoais e sociais das crianças e jovens, facilitando e estimulando a sua autonomia, preparando um futuro melhor, na transmissão dos valores assentes na doutrina social da igreja.',
 
     'titleValues' => 'Valores',
     'values' => 'Valores baseados nas leis estruturantes da sociedade segundo a Doutrina Social da Igreja:',

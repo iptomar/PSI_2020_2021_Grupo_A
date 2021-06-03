@@ -2,7 +2,7 @@
     <div class="img-container">
 
         <div class="img-title">
-            <span>@lang('frontoffice.foundation')<span>
+            <span>@lang('frontoffice.group')<span>
         </div>
     </div>
 </div>
