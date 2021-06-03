@@ -19,9 +19,15 @@ L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=IXBp03awR
 updateMarkers();
 
 map.on('click',function(e){
-    removeMarkers();
+    /*removeMarkers();
     L.marker(e.latlng).addTo(map);
-    openModel(e.latlng);
+    openModel(e.latlng);*/
+    L.Routing.control({
+        waypoints: [
+          L.latLng(57.74, 11.94),
+          L.latLng(57.6792, 11.949)
+        ]
+      }).addTo(map);
 })
 
 function openModel(latlng){
