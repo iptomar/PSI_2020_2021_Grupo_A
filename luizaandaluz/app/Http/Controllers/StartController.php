@@ -96,12 +96,12 @@ class StartController extends Controller
 
     private function jessica(){
         return [
-            'name'=>'',
+            'name'=>'Jéssica Ribeiro Maria',
             'website'=>['url'=>'','name'=>''],
             'image'=>'',
-            'birthday'=>'',
+            'birthday'=>'1999-02-11',
             'desc'=>lang('group.jessica'),
-            'number'=>'',
+            'number'=>'21074',
         ];
     }
 
