@@ -30,12 +30,12 @@ class StartController extends Controller
 
     private function camilo(){
         return [
-            'name'=>'',
-            'website'=>['url'=>'','name'=>''],
+            'name'=>'Camilo Diego Bechir Sauane',
+            'website'=>['url'=>'https://www.instagram.com/diego_bs8/','name'=>'Instagram'],
             'image'=>'',
-            'birthday'=>'',
+            'birthday'=>'1998-07-29 ',
             'desc'=>lang('group.camilo'),
-            'number'=>'',
+            'number'=>'21085',
         ];
     }
 
