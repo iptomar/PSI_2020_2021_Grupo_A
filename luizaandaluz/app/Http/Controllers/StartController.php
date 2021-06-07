@@ -63,12 +63,12 @@ class StartController extends Controller
 
     private function andre(){
         return [
-            'name'=>'',
+            'name'=>'André José Gonçalves Ramos',
             'website'=>['url'=>'','name'=>''],
             'image'=>'',
-            'birthday'=>'',
+            'birthday'=>'1999-10-15',
             'desc'=>lang('group.andre'),
-            'number'=>'',
+            'number'=>'20710',
         ];
     }
 
