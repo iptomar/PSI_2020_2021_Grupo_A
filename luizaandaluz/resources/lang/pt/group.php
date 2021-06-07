@@ -7,6 +7,6 @@ return [
     'flavio'=>'',
     'jessica'=>'',
     'diogo'=>'Sou apenas um rapazito que tem como part-time jogar computador e sair com os amigos.',
-    'samuel'=>'',
+    'samuel'=>'Tudo o que eu tenho a dizer sobre mim está neste link https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     'pedro'=>''
 ];

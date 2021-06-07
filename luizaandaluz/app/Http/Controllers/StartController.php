@@ -74,12 +74,12 @@ class StartController extends Controller
 
     private function samuel(){
         return [
-            'name'=>'',
-            'website'=>['url'=>'','name'=>''],
+            'name'=>'Samuel Leal Gomes Luis',
+            'website'=>['url'=>'https://github.com/samueluis','name'=>'Git'],
             'image'=>'',
-            'birthday'=>'',
+            'birthday'=>'1998-05-15',
             'desc'=>lang('group.samuel'),
-            'number'=>'',
+            'number'=>'21461',
         ];
     }
 
