@@ -41,12 +41,12 @@ class StartController extends Controller
 
     private function diogo(){
         return [
-            'name'=>'',
-            'website'=>['url'=>'','name'=>''],
+            'name'=>'Diogo Polidoro',
+            'website'=>['url'=>'https://www.instagram.com/diogorpolidoro/','name'=>'Instagram'],
             'image'=>'',
-            'birthday'=>'',
+            'birthday'=>'1997-11-23',
             'desc'=>lang('group.diogo'),
-            'number'=>'',
+            'number'=>'20752',
         ];
     }
 
