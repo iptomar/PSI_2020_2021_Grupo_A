@@ -2,7 +2,7 @@
     <div class="img-container">
 
         <div class="img-title">
-            <span>@lang('frontoffice.foundation')<span>
+            <span>@lang('frontoffice.group')<span>
         </div>
     </div>
 </div>
@@ -10,10 +10,10 @@
     <div class="col-12 col-md-3 d-flex align-items-stretch">
         <div class="card foundation card-vision">
             <div class="card-header text-center">
-                <h5>@lang('frontoffice.titleVision')</h5>
+                <img src="{{asset('imagem/FAVICON-LACC-GRIZ.png')}}" style="max-width: 100px;" />
             </div>
             <div class="card-body">
-                <p class="card-text">@lang('frontoffice.visionFoundation')</p>
+                <p class="card-text">Diogo</p>
             </div>
         </div>
     </div>

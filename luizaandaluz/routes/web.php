@@ -33,6 +33,7 @@ Route::prefix('map')->name('map.')->group(function() {
 Route::get('/history', [HistoryController::class,'index'])->name('history');
 Route::get('/foundation', [FoundationController::class,'index'])->name('foundation');
 Route::get('/contact', [ContactController::class,'index'])->name('contact');
+Route::get('/group', [StartController::class,'group'])->name('group');
 
 
 //This route it's use to change the languange
