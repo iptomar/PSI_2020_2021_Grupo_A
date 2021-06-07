@@ -42,4 +42,17 @@ return [
 
     'titleMission' => 'Missão',
     'missionFoundation' => 'A Fundação Luiza Andaluz tem como missão acolher crianças e jovens que se encontram em situação legal de risco, protegendo, cuidando, educando e transmitindo esperança para a construção do seu futuro, tendo em conta as suas características pessoais e sociais.',
+
+    'detailsTitle' => 'Deixe os seus detalhes!',
+    'detailsDescription' => 'Forneça a sua informação pessoal em conjunto com as suas dúvidas de maneira a podermos tentar esclarecê-las por endereço eletrónico.',
+    'fName' => 'Primeiro nome',
+	'lName' => 'Apelido',
+	'age' => 'Idade',
+	'gender' => 'Género',
+	'male' => 'Masculino',
+	'female' => 'Feminino',
+	'other' => 'Outro',
+	'mobileContact' => 'Contacto telefónico',
+	'email' => 'Endereço eletrónico',
+	'submit' => 'Submeter'
 ];

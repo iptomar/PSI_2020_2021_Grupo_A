@@ -41,4 +41,18 @@ return [
     'values-faith'=>'Christian Faith',
     'titleMission' => 'Mission',
     'missionFoundation' => 'The Luiza Andaluz Foundation`s mission is to welcome children and young people who are in a legal situation of risk, protecting, caring, educating and transmitting hope for the construction of their future, taking into account their personal and social characteristics.',
+
+    'detailsTitle' => 'Leave your details!',
+    'detailsDescription' => 'Give us your personal information and your questions so we can try and answer them via e-mail.',
+    'fName' => 'Given Name',
+	'lName' => 'Surname',
+	'age' => 'Age',
+	'gender' => 'Gender',
+	'male' => 'Male',
+	'female' => 'Female',
+	'other' => 'Other',
+	'mobileContact' => 'Mobile Contact',
+	'email' => 'E-mail',
+	'submit' => 'Submit'
+
 ];
