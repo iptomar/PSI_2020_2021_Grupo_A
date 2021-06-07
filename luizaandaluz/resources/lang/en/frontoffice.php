@@ -8,6 +8,7 @@ return [
     'formCreate' => 'Create Interation',
     'formTitle' => 'Title',
     'formDescription' => 'Description',
+    'group' => 'Group',
 
     'titleContact' => 'Contacts:',
 
@@ -27,7 +28,7 @@ return [
     The girls who passed through the Foundation know that they are heirs of a very rich history of which they are the first protagonists, a history made of small and large victories that only the struggle and persistence of Luiza Andaluz and the educational community over the years made possible, striving for their dignity and for ensuring adequate space and means for their growth.',
 
     'titleVision' => 'Vision',
-    'visonFoundation' => 'To be a social response specialized in welcoming and fully developing the personal and social skills of children and young people, facilitating and stimulating their autonomy, preparing a better future, in the transmission of values ​​based on the social doctrine of the church.',
+    'visionFoundation' => 'To be a social response specialized in welcoming and fully developing the personal and social skills of children and young people, facilitating and stimulating their autonomy, preparing a better future, in the transmission of values ​​based on the social doctrine of the church.',
 
     'titleValues' => 'Values',
     'values' => 'Values ​​based on the structuring laws of society according to the Social Doctrine of the Church:',
@@ -40,4 +41,18 @@ return [
     'values-faith'=>'Christian Faith',
     'titleMission' => 'Mission',
     'missionFoundation' => 'The Luiza Andaluz Foundation`s mission is to welcome children and young people who are in a legal situation of risk, protecting, caring, educating and transmitting hope for the construction of their future, taking into account their personal and social characteristics.',
+
+    'detailsTitle' => 'Leave your details!',
+    'detailsDescription' => 'Give us your personal information and your questions so we can try and answer them via e-mail.',
+    'fName' => 'Given Name',
+	'lName' => 'Surname',
+	'age' => 'Age',
+	'gender' => 'Gender',
+	'male' => 'Male',
+	'female' => 'Female',
+	'other' => 'Other',
+	'mobileContact' => 'Mobile Contact',
+	'email' => 'E-mail',
+	'submit' => 'Submit'
+
 ];

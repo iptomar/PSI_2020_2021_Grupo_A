@@ -8,6 +8,7 @@ return [
     'formCreate' => 'Criar Interação',
     'formTitle' => 'Título',
     'formDescription' => 'Descrição',
+    'group' => 'Grupo',
 
     'titleContact' => 'Contactos:',
 
@@ -27,7 +28,7 @@ return [
     As meninas que passaram pela Fundação sabem-se herdeiras de uma riquíssima história da qual são as primeiras protagonistas, uma história feita de pequenas e grandes vitórias que só a luta e a persistência de Luiza Andaluz e da comunidade educativa ao longo dos anos tornou possíveis, pugnando pela sua dignidade e por garantir espaço e meios adequados ao seu crescimento.',
 
     'titleVision' => 'Visão',
-    'visonFoundation' => 'Sermos uma resposta social especializada no acolhimento e desenvolvimento pleno das competências pessoais e sociais das crianças e jovens, facilitando e estimulando a sua autonomia, preparando um futuro melhor, na transmissão dos valores assentes na doutrina social da igreja.',
+    'visionFoundation' => 'Sermos uma resposta social especializada no acolhimento e desenvolvimento pleno das competências pessoais e sociais das crianças e jovens, facilitando e estimulando a sua autonomia, preparando um futuro melhor, na transmissão dos valores assentes na doutrina social da igreja.',
 
     'titleValues' => 'Valores',
     'values' => 'Valores baseados nas leis estruturantes da sociedade segundo a Doutrina Social da Igreja:',
@@ -41,4 +42,17 @@ return [
 
     'titleMission' => 'Missão',
     'missionFoundation' => 'A Fundação Luiza Andaluz tem como missão acolher crianças e jovens que se encontram em situação legal de risco, protegendo, cuidando, educando e transmitindo esperança para a construção do seu futuro, tendo em conta as suas características pessoais e sociais.',
+
+    'detailsTitle' => 'Deixe os seus detalhes!',
+    'detailsDescription' => 'Forneça a sua informação pessoal em conjunto com as suas dúvidas de maneira a podermos tentar esclarecê-las por endereço eletrónico.',
+    'fName' => 'Primeiro nome',
+	'lName' => 'Apelido',
+	'age' => 'Idade',
+	'gender' => 'Género',
+	'male' => 'Masculino',
+	'female' => 'Feminino',
+	'other' => 'Outro',
+	'mobileContact' => 'Contacto telefónico',
+	'email' => 'Endereço eletrónico',
+	'submit' => 'Submeter'
 ];
