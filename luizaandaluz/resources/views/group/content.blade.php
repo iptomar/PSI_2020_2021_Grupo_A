@@ -6,48 +6,25 @@
         </div>
     </div>
 </div>
-<div class="row justify-content-md-center">
-    <div class="col-12 col-md-3 d-flex align-items-stretch">
-        <div class="card foundation card-vision">
-            <div class="card-header text-center">
-                <img src="{{asset('imagem/FAVICON-LACC-GRIZ.png')}}" style="max-width: 100px;" />
-            </div>
-            <div class="card-body">
-                <p class="card-text">Diogo</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-md-4 d-flex align-items-stretch">
-        <div class="card foundation card-value">
-            <div class="card-header text-center">
-                <h5>@lang('frontoffice.titleValues')</h5>
-            </div>
-            <div class="card-body">
-                <p class="card-text">@lang('frontoffice.values')</p>
-                <div class="row">
-                    <div class="col-12 col-md-12 col-xl-6">@lang('frontoffice.values-respect')</div>
-                    <div class="col-12 col-md-12 col-xl-6">@lang('frontoffice.values-solidarity')</div>
+
+    @foreach ($alunos as $index=>$aluno)
+        @if ($index == 0 || $index == 4)
+            <div class="row justify-content-md-center ml-2 mb-6">
+        @endif
+        <div class="col-sm-12 col-md-3 d-flex align-items-stretch">
+            <div class="card foundation card-vision">
+                <div class="card-header text-center">
+                    <img src="{{$aluno['image']}}" style="max-width: 100px;" />
                 </div>
-                <div class="row">
-                    <div class="col-12 col-md-12 col-xl-6">@lang('frontoffice.values-justice')</div>
-                    <div class="col-12 col-md-12 col-xl-6">@lang('frontoffice.values-coop')</div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-12 col-xl-4">@lang('frontoffice.values-truth')</div>
-                    <div class="col-12 col-md-12 col-xl-4">@lang('frontoffice.values-disponibility')</div>
-                    <div class="col-12 col-md-12 col-xl-4">@lang('frontoffice.values-faith')</div>
+                <div class="card-body">
+                    <p class="card-header">{{ $aluno['number'] }} - {{ $aluno['name'] }} @if(($aluno['website']['url']) != '')<a target="_blank" href="{{ $aluno['website']['url'] }}" alt="{{ $aluno['website']['name'] }}"><i class="fas fa-globe"></i></a>@endif</p>
+                    <p class="card-text">{{ $aluno['birthday'] }}</p>
+                    <p class="card-text">{{ $aluno['desc'] }}</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-12 col-md-3 d-flex align-items-stretch">
-        <div class="card foundation card-mission">
-            <div class="card-header text-center">
-                <h5>@lang('frontoffice.titleMission')</h5>
+        @if ($index == 3 || $index == 8)
             </div>
-            <div class="card-body">
-                <p class="card-text">@lang('frontoffice.missionFoundation')</p>
-            </div>
-        </div>
-    </div>
-</div>
+        @endif
+    @endforeach
+
