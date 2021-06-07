@@ -6,7 +6,7 @@ return [
     'camilo'=>'',
     'flavio'=>'',
     'jessica'=>'',
-    'diogo'=>'',
+    'diogo'=>'Sou apenas um rapazito que tem como part-time jogar computador e sair com os amigos. Aos Domingos gosto de ir à missa para estar mais perto de DEUS',
     'samuel'=>'',
     'pedro'=>''
 ];
