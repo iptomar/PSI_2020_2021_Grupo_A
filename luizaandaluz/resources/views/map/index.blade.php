@@ -1,16 +1,23 @@
-@extends('layout.backoffice')
+@extends('layout.frontpage')
+
+@section('title', lang('fullstack.title'))
 
 @section('css')
-<link href="/css/map.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/css/map.css">
 @endsection
 
 @section('content')
-
-<div id="map"> </div>
-
+    <div id="map"></div>
+    @include('map._modal')
 @endsection
 
 @section('scripts')
-
 <script src="/js/map.js"></script>
+@if(isset($message))
+        <script>
+            var json_messages = {!! $message !!}
+        </script>
+@endif
+
+<script src="/js/toast.js"></script>
 @endsection

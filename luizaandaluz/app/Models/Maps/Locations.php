@@ -10,13 +10,26 @@ class Locations extends Model
 {
     protected $collection = 'locations';
 
-    protected $primaryKey = 'uuid'; 
+    protected $primaryKey = 'uuid';
+
+    protected $fillable = [
+        'uuid', 'lat','lng'
+    ];
+
+    protected $visible = [
+        'uuid', 'lat','lng'
+    ];
 
     public static function getLocation(){
         return Locations::firstorNew([
-            'id' => Uuid::uuid1()->toString(),
+            'uuid' => Uuid::uuid1()->toString(),
             'lng' => null,
             'lat' => null,
         ]);
+    }
+
+    public function interations()
+    {
+        return $this->belongsTo(Interations::class,'uuid','location');
     }
 }
