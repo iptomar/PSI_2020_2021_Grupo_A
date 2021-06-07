@@ -3,10 +3,10 @@
 return [
     'oscar'=>'Não existe muito a dizer, tenho vários hobbies mas sou claramente um gamer e programador.',
     'andre'=>'',
-    'camilo'=>'',
+    'camilo'=>'Sinceramente, não concordo nem discordo... muito pelo contrário.',
     'flavio'=>'',
     'jessica'=>'',
-    'diogo'=>'',
+    'diogo'=>'Sou apenas um rapazito que tem como part-time jogar computador e sair com os amigos.',
     'samuel'=>'',
     'pedro'=>''
 ];
