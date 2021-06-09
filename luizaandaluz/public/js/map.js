@@ -45,7 +45,6 @@ $('#interactionForm').submit(function(e){
         resetMarkers();
         $('#interationMap').modal('toggle');
         clearForm();
-
     })
 });
 function clearForm(){
