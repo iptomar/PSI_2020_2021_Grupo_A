@@ -19,7 +19,7 @@
                 <div class="card-body">
                     <p class="card-header">{{ $aluno['number'] }} - {{ $aluno['name'] }} @if(($aluno['website']['url']) != '')<a target="_blank" href="{{ $aluno['website']['url'] }}" alt="{{ $aluno['website']['name'] }}"><i class="fas fa-globe"></i></a>@endif</p>
                     <p class="card-text">{{ $aluno['birthday'] }}</p>
-                    <p class="card-text">{{ $aluno['desc'] }}</p>
+                    <p class="card-text">{!! $aluno['desc'] !!}</p>
                 </div>
             </div>
         </div>

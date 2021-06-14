@@ -30,23 +30,23 @@ class StartController extends Controller
 
     private function camilo(){
         return [
-            'name'=>'',
-            'website'=>['url'=>'','name'=>''],
+            'name'=>'Camilo Diego Bechir Sauane',
+            'website'=>['url'=>'https://www.instagram.com/diego_bs8/','name'=>'Instagram'],
             'image'=>'',
-            'birthday'=>'',
+            'birthday'=>'1998-07-29 ',
             'desc'=>lang('group.camilo'),
-            'number'=>'',
+            'number'=>'21085',
         ];
     }
 
     private function diogo(){
         return [
-            'name'=>'',
-            'website'=>['url'=>'','name'=>''],
+            'name'=>'Diogo Polidoro',
+            'website'=>['url'=>'https://www.instagram.com/diogorpolidoro/','name'=>'Instagram'],
             'image'=>'',
-            'birthday'=>'',
+            'birthday'=>'1997-11-23',
             'desc'=>lang('group.diogo'),
-            'number'=>'',
+            'number'=>'20752',
         ];
     }
 
@@ -74,12 +74,12 @@ class StartController extends Controller
 
     private function samuel(){
         return [
-            'name'=>'',
-            'website'=>['url'=>'','name'=>''],
+            'name'=>'Samuel Leal Gomes Luis',
+            'website'=>['url'=>'https://github.com/samueluis','name'=>'Git'],
             'image'=>'',
-            'birthday'=>'',
+            'birthday'=>'1998-05-15',
             'desc'=>lang('group.samuel'),
-            'number'=>'',
+            'number'=>'21461',
         ];
     }
 
@@ -96,12 +96,12 @@ class StartController extends Controller
 
     private function jessica(){
         return [
-            'name'=>'',
+            'name'=>'Jéssica Ribeiro Maria',
             'website'=>['url'=>'','name'=>''],
             'image'=>'',
-            'birthday'=>'',
+            'birthday'=>'1999-02-11',
             'desc'=>lang('group.jessica'),
-            'number'=>'',
+            'number'=>'21074',
         ];
     }
 
