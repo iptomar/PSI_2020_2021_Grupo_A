@@ -12,21 +12,17 @@ class Interations extends Model
     protected $primaryKey = 'uuid';
 
     protected $fillable = [
-        'uuid', 'location','attachment','name','email','birthday','title','description'
+        'uuid', 'location','title','description'
     ];
 
     public $visible = [
-        'uuid', 'location','attachment','name','email','birthday','title','description'
+        'uuid', 'location','title','description'
     ];
 
     public static function getInteration(){
         return Interations::firstorNew([
             'uuid' => Uuid::uuid1()->toString(),
             'location' => null,
-            'attachment' => null,
-            'name' => null,
-            'email' => null,
-            'birthday' => null,
             'title' => null,
             'description' => null,
         ]);

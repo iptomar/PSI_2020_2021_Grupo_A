@@ -16,13 +16,8 @@ class CreateInterationCollection extends Migration
         Schema::create('map_interation', function (Blueprint $collection) {
             $collection->unique('uuid');
             $collection->index('location');
-            $collection->index('attachment');
             $collection->string('title');
             $collection->string('description');
-            $collection->string('email');
-            $collection->string('name');
-            $collection->date('birthday');
-
             $collection->timestamps();
         });
     }

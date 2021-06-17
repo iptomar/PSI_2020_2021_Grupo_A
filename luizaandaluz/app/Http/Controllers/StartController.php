@@ -85,12 +85,12 @@ class StartController extends Controller
 
     private function pedro(){
         return [
-            'name'=>'Pedro Rafael Magalhães Gomes',
+            'name'=>'',
             'website'=>['url'=>'','name'=>''],
             'image'=>'',
-            'birthday'=>'1998-10-29',
+            'birthday'=>'',
             'desc'=>lang('group.pedro'),
-            'number'=>'21279',
+            'number'=>'',
         ];
     }
 
