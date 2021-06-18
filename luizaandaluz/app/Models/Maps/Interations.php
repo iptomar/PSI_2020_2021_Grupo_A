@@ -12,11 +12,11 @@ class Interations extends Model
     protected $primaryKey = 'uuid';
 
     protected $fillable = [
-        'uuid', 'location','attachment','name','email','birthday','title','description'
+        'uuid', 'location','attachment','name','email','birthday','title','description','active'
     ];
 
     public $visible = [
-        'uuid', 'location','attachment','name','email','birthday','title','description'
+        'uuid', 'location','attachment','name','email','birthday','title','description','active'
     ];
 
     public static function getInteration(){
@@ -29,11 +29,17 @@ class Interations extends Model
             'birthday' => null,
             'title' => null,
             'description' => null,
+            'active' => 1,
         ]);
     }
 
     public function locations()
     {
         return $this->belongsTo(Locations::class,'location','uuid');
+    }
+
+    public function files()
+    {
+        return $this->hasMany(Files::class,'uuid');
     }
 }

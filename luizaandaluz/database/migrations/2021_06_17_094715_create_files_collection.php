@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Jenssegers\Mongodb\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateInterationCollection extends Migration
+class CreateFilesCollection extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,12 @@ class CreateInterationCollection extends Migration
      */
     public function up()
     {
-        Schema::create('map_interation', function (Blueprint $collection) {
+        Schema::create('files', function (Blueprint $collection) {
             $collection->unique('uuid');
-            $collection->index('location');
-            $collection->index('attachment');
-            $collection->string('title');
-            $collection->string('description');
-            $collection->string('email');
+            $collection->index('interation');
             $collection->string('name');
-            $collection->date('birthday');
-            $collection->boolean('active');
-
+            $collection->string('filepath');
+            $collection->string('type');
             $collection->timestamps();
         });
     }
@@ -35,6 +30,6 @@ class CreateInterationCollection extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('map_interation');
+        Schema::dropIfExists('files');
     }
 }

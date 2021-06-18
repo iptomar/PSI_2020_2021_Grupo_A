@@ -28,6 +28,7 @@ Route::prefix('map')->name('map.')->group(function() {
     Route::get('/', [InterationsController::class,'index'])->name('map');
     Route::post('/store', [InterationsController::class,'store'])->name('interaction');
     Route::get('/locations', [InterationsController::class,'getLocations'])->name('locations');
+    Route::get('/interations/{id}', [InterationsController::class,'getInterations'])->name('interations');
 });
 
 Route::get('/history', [HistoryController::class,'index'])->name('history');

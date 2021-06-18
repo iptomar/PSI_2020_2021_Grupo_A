@@ -6,5 +6,9 @@ return [
     'close' => 'Fechar',
     'logo' => 'Fundação Luiza Andaluz',
     'welcome' => 'Bem Vindo à Fundação',
-    'enter' =>  'Iniciar Experiência <br /> Start Experience'
+    'enter' =>  'Iniciar Experiência <br /> Start Experience',
+    'interations' =>  'Interação',
+    'list' =>  'Lista',
+    'create' =>  'Criar',
+    'date' =>  'Data',
 ];

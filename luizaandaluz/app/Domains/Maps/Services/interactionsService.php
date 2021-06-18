@@ -12,8 +12,8 @@ class interactionsService
 {
     public function save($input){
         $session = DB::getMongoClient()->startSession();
-        $session->startTransaction();
         try {
+            $session->startTransaction();
             $location = $this->createLocation($input);
             //$location = Locations::where('lat',$input['lat'])->where('lng',$input['lng'])->first();
             $this->createInteraction($input,$location);
@@ -36,9 +36,9 @@ class interactionsService
     private function createInteraction($input,$location){
         $interaction = Interations::getInteration();
         $interaction->location = $location->uuid;
-        $interaction->title = $input['name'];
-        $interaction->description = $input['email'];
-        $interaction->description = $input['birthday'];
+        $interaction->name = $input['name'];
+        $interaction->email = $input['email'];
+        $interaction->birthday = $input['date'];
         $interaction->title = $input['title'];
         $interaction->description = $input['description'];
         $interaction->save();

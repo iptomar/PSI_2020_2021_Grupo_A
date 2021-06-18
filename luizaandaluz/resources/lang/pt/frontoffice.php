@@ -54,5 +54,15 @@ return [
 	'other' => 'Outro',
 	'mobileContact' => 'Contacto telefónico',
 	'email' => 'Endereço eletrónico',
-	'submit' => 'Submeter'
+	'submit' => 'Submeter',
+	'interationform' => [
+                            'user_info' => 'Informação do Utilizador',
+                            'name' => 'Nome',
+                            'email' => 'E-Mail',
+                            'birthday' => 'Data Nascimento',
+                            'interation_info' => 'Informação da Interação',
+                            'title' => 'Título',
+                            'description' => 'Descrição',
+                        ],
+
 ];
