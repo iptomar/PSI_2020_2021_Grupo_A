@@ -14,13 +14,16 @@ class interactionsService
         $session = DB::getMongoClient()->startSession();
         try {
             $session->startTransaction();
-            $location = $this->createLocation($input);
+            $location = Locations::where('lat',$input['lat'])->where('lng',$input['lng'])->first();
+
+            if (null == $location)
+                $location = $this->createLocation($input);
             //$location = Locations::where('lat',$input['lat'])->where('lng',$input['lng'])->first();
             $this->createInteraction($input,$location);
             $session->commitTransaction();
         } catch(Exception $e) {
             $session->abortTransaction();
-            return ['bg-danger'=>['title'=>'Error','text'=>'The interaction was not created']];
+            return ['bg-danger'=>['title'=>'Error','text'=>'The interaction was not created. '.$e->getMessage()]];
         }
         return ['bg-success'=>['title'=>'Success','text'=>'The interaction was created with success']];
     }

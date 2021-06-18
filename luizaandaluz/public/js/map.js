@@ -27,6 +27,7 @@ updateMarkers();
 map.on('click',function(e){
     removeMarkers();
     L.marker(e.latlng,{icon: customIcon}).on('click', markerClick).addTo(map);
+    $('#list_interation tbody tr').remove();
     openModel(e.latlng);
 })
 
@@ -114,8 +115,8 @@ function markerClick(e) {
             'Accept': 'application/json',
         },
         success: function(data){
-            var table = createTable(data);
             $('#list_interation tbody tr').remove();
+            var table = createTable(data);
             $('#list_interation').find('tbody').append(table);
             openModel(e.latlng);
         }

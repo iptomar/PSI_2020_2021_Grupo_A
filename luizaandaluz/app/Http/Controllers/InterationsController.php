@@ -41,14 +41,16 @@ class InterationsController extends Controller
     }
 
     public function getInterations($id){
-        $interations = Interations::where('location',$id)->select('uuid','name','title','created_at')->get();
+        $interations = Interations::where('location',$id)->select('uuid','location','name','title','created_at')->get();
         $arr = [];
         foreach ($interations as $int){
             $arr[] = [
                 'uuid' => $int->uuid,
                 'name' => $int->name,
                 'title' => $int->title,
-                'date' => $int->created_at->toDateString()
+                'date' => $int->created_at->toDateString(),
+                'lat' => $int->locations()->first()->lat,
+                'lng' => $int->locations()->first()->lng
             ];
         }
         return response()->json($arr);
