@@ -87,7 +87,7 @@ class StartController extends Controller
         return [
             'name'=>'Pedro Rafael Magalhães Gomes',
             'website'=>['url'=>'','name'=>''],
-            'image'=>'',
+            'image'=>asset('imagem/Alunos/pedro.jpeg'),
             'birthday'=>'1998-10-29',
             'desc'=>lang('group.pedro'),
             'number'=>'21279',
