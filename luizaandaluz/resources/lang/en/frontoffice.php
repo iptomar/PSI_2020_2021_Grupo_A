@@ -53,6 +53,38 @@ return [
 	'other' => 'Other',
 	'mobileContact' => 'Mobile Contact',
 	'email' => 'E-mail',
-	'submit' => 'Submit'
+	'submit' => 'Submit',
+
+    'interationform' => [
+        'user_info' => 'User Information',
+        'name' => 'Name',
+        'email' => 'E-Mail',
+        'birthday' => 'Date of Birth',
+        'interation_info' => 'Interaction Information',
+        'title' => 'Title',
+        'description' => 'Description',
+        'youtube' => 'Youtube Links',
+        'video' => 'Upload Videos',
+        'image' => 'Upload Images',
+        'file' => 'File Upload (pdf)',
+        'detailsTitle'=>'Interaction Details'
+    ],
+'interation-fail' => 'The interaction was not created.',
+'interation-success' => 'The interaction was created with success. Waiting for approval.',
+'uploadform' => [
+    'url' => 'URL:',
+    'addPDF' => 'Add PDF',
+    'addImage' => 'Add Image',
+    'addVideo' => 'Add Video',
+    'addLink' => 'Add Youtube Link',
+    'title' => 'Title',
+    'bad-url' => 'This url is poorly created!',
+    'file-excess' => 'This file exceeds the limit! The limit is 8MB.',
+    'video-excess' => 'This file exceeds the limit! The limit is 20MB.',
+],
+'details-f'=>'Files',
+'details-l'=>'Youtube',
+'details-i'=>'Images',
+'details-v'=>'Videos',
 
 ];
