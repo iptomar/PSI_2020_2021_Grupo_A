@@ -194,8 +194,6 @@ $('#addvideo').on('click',function(){
     code += '</div>';
     code += '</div>';
     $('#videos').append(code);
-    getVideos();
-
 });
 
 $('#addlink').on('click',function(){
