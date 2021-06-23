@@ -20,7 +20,7 @@ class Files extends Model
     ];
 
     public static function getFile(){
-        return Interations::firstorNew([
+        return Files::firstorNew([
             'uuid' => Uuid::uuid1()->toString(),
             'interation' => null,
             'name' => null,

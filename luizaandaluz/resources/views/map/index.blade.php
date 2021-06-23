@@ -9,13 +9,17 @@
 @section('content')
     <div id="map"></div>
     @include('map._modal')
+    @include('map._details')
 @endsection
-
 @section('scripts')
+<script>
+    var json_translations = {!! json_encode(lang('frontoffice.uploadform')) !!}
+</script>
+
 <script src="/js/map.js"></script>
-@if(isset($message))
+@if(\Session::has('message'))
         <script>
-            var json_messages = {!! $message !!}
+            var json_messages = {!! json_encode(\Session::get('message')) !!}
         </script>
 @endif
 

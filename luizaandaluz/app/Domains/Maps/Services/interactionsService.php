@@ -2,15 +2,16 @@
 
 namespace App\Domains\Maps\Services;
 
+use App\Models\Maps\Files;
 use App\Models\Maps\Interations;
 use App\Models\Maps\Locations;
 use Exception;
 use Illuminate\Support\Facades\DB;
-
+use Illuminate\Support\Facades\File;
 
 class interactionsService
 {
-    public function save($input){
+    public function save($input,$files){
         $session = DB::getMongoClient()->startSession();
         try {
             $session->startTransaction();
@@ -18,14 +19,14 @@ class interactionsService
 
             if (null == $location)
                 $location = $this->createLocation($input);
-            //$location = Locations::where('lat',$input['lat'])->where('lng',$input['lng'])->first();
-            $this->createInteraction($input,$location);
+            $interation = $this->createInteraction($input,$location);
+            $this->associateFiles($interation,$input,$files);
             $session->commitTransaction();
         } catch(Exception $e) {
             $session->abortTransaction();
-            return ['bg-danger'=>['title'=>'Error','text'=>'The interaction was not created. '.$e->getMessage()]];
+            return ['bg-danger'=>['title'=>'Error','text'=>lang('frontoffice.interation-fail')]];
         }
-        return ['bg-success'=>['title'=>'Success','text'=>'The interaction was created with success']];
+        return ['bg-success'=>['title'=>'Success','text'=>lang('frontoffice.interation-success')]];
     }
 
     private function createLocation($input){
@@ -45,5 +46,60 @@ class interactionsService
         $interaction->title = $input['title'];
         $interaction->description = $input['description'];
         $interaction->save();
+
+        return $interaction;
+    }
+
+    private function associateFiles($interation,$input,$files){
+        if(isset($input['url']) && isset($input['urltitle'])){
+            foreach($input['url'] as $index=>$url){
+                $this->createFile($interation->uuid,$input['urltitle'][$index],$url,'l');
+            }
+        }
+
+        $path = public_path().'\\files\\'.$interation->uuid;
+
+        if(!File::exists($path)){
+            File::makeDirectory($path);
+        }
+
+        if(isset($files['files'])){
+            foreach($files['files'] as $index=>$file){
+                $ext = $file->extension();
+                $search = '.'.$ext;
+                $filename = str_replace($search,'',$input['filename'][$index]).$search;
+                $filepath = $file->storeAs($interation->uuid,$filename,'uploadPath');
+                $this->createFile($interation->uuid,$input['filename'][$index],$filepath,'f');
+            }
+        }
+
+        if(isset($files['images'])){
+            foreach($files['images'] as $index=>$image){
+                $ext = $image->extension();
+                $search = '.'.$ext;
+                $filename = str_replace($search,'',$input['imagename'][$index]).$search;
+                $filepath = $image->storeAs($interation->uuid,$filename,'uploadPath');
+                $this->createFile($interation->uuid,$input['imagename'][$index],$filepath,'i');
+            }
+        }
+
+        if(isset($files['videos'])){
+            foreach($files['videos'] as $index=>$video){
+                $ext = $video->extension();
+                $search = '.'.$ext;
+                $filename = str_replace($search,'',$input['videoname'][$index]).$search;
+                $filepath = $video->storeAs($interation->uuid,$filename,'uploadPath');
+                $this->createFile($interation->uuid,$input['videoname'][$index],$filepath,'v');
+            }
+        }
+    }
+
+    private function createFile($interation,$title,$filepath,$type){
+        $file = Files::getFile();
+        $file->interation = $interation;
+        $file->name = $title;
+        $file->filepath = $filepath;
+        $file->type = $type;
+        $file->save();
     }
 }

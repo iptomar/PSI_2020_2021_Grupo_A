@@ -29,13 +29,14 @@ Route::prefix('map')->name('map.')->group(function() {
     Route::post('/store', [InterationsController::class,'store'])->name('interaction');
     Route::get('/locations', [InterationsController::class,'getLocations'])->name('locations');
     Route::get('/interations/{id}', [InterationsController::class,'getInterations'])->name('interations');
+    Route::get('/interation/{id}', [InterationsController::class,'getInteration'])->name('detail');
 });
 
+//This routes are the static pages for the frontoffice
 Route::get('/history', [HistoryController::class,'index'])->name('history');
 Route::get('/foundation', [FoundationController::class,'index'])->name('foundation');
 Route::get('/contact', [ContactController::class,'index'])->name('contact');
 Route::get('/group', [StartController::class,'group'])->name('group');
-
 
 //This route it's use to change the languange
 Route::get('locale/{locale}',function($locale){

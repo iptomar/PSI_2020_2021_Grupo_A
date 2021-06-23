@@ -63,6 +63,28 @@ return [
                             'interation_info' => 'Informação da Interação',
                             'title' => 'Título',
                             'description' => 'Descrição',
+                            'youtube' => 'Links de Youtube',
+                            'video' => 'Upload de Videos',
+                            'image' => 'Upload de Imagens',
+                            'file' => 'Upload de Ficheiros (pdf)',
+                            'detailsTitle'=>'Detalhes da Interação'
                         ],
+    'interation-fail' => 'The interaction was not created.',
+    'interation-success' => 'The interaction was created with success. Waiting for approval.',
+    'uploadform' => [
+                        'url' => 'URL:',
+                        'addPDF' => 'Adicionar PDF',
+                        'addImage' => 'Adicionar Imagem',
+                        'addVideo' => 'Adicionar Video',
+                        'addLink' => 'Adicionar Link Youtube',
+                        'title' => 'Título',
+                        'bad-url' => 'Este url está mal criado!',
+                        'file-excess' => 'Este ficheiro excede o limite! O limite é 8MB.',
+                        'video-excess' => 'Este ficheiro excede o limite! O limite é 20MB.',
+    ],
+    'details-f'=>'Ficheiros',
+    'details-l'=>'Youtube',
+    'details-i'=>'Imagens',
+    'details-v'=>'Videos',
 
 ];

@@ -28,35 +28,39 @@
 </div>
 
 
-<div>
-    <div>
+<div class="row">
+    <div class="col-6">
         <h1>@lang('frontoffice.detailsTitle')</h1>
         <h4>@lang('frontoffice.detailsDescription')</h4>
     </div>
-    <form >
-        <label for="fName">@lang('frontoffice.fName'):</label><br>
-        <input type="text" id="fName" name="fName"><br>
-        
-        <label for="lName">@lang('frontoffice.lName'):</label><br>
-        <input type="text" id="fName" name="fName"><br>
-        
-        <label for="age">@lang('frontoffice.age'):</label><br>
-        <input type="number" id="age" name="age"><br>
-        
-        <label for="gender">@lang('frontoffice.gender'):</label><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">@lang('frontoffice.male')</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">@lang('frontoffice.female')</label><br>
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">@lang('frontoffice.other')</label><br>
-        
-        <label for="mobileContact">@lang('frontoffice.mobileContact'):</label><br>
-        <input type="text" id="mobileContact" name="mobileContact"><br>
-        
-        <label for="email">@lang('frontoffice.email'):</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        
-        <input type="submit" value="@lang('frontoffice.submit')">
-    </form>
+    <div class="col-12">
+        <form >
+            <div class="form-group">
+                <label for="fName">@lang('frontoffice.fName'):</label>
+                <input type="text" id="fName" name="fName">
+
+                <label for="lName">@lang('frontoffice.lName'):</label>
+                <input type="text" id="lName" name="lName">
+            </div>
+            <div class="form-group">
+                <label for="age">@lang('frontoffice.age'):</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div class="form-group">
+                <label for="gender">@lang('frontoffice.gender'):</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">@lang('frontoffice.male')</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">@lang('frontoffice.female')</label>
+            </div>
+            <div class="form-group">
+                <label for="mobileContact">@lang('frontoffice.mobileContact'):</label>
+                <input type="text" id="mobileContact" name="mobileContact">
+
+                <label for="email">@lang('frontoffice.email'):</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <button type="submit" class="btn btn-primary">@lang('frontoffice.submit')</button>
+        </form>
+    </div>
 </div>

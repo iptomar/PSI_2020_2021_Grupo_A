@@ -1,6 +1,6 @@
 var tooltip;
 var map;
-console.log(tooltip);
+
 map = L.map('map').setView([39.23286485050368, -8.681974512559403],18);
 L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=IXBp03awRrE7NSnTkCkm', {
     minZoom: 15,

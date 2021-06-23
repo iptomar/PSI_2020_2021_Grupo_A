@@ -1,8 +1,9 @@
-<form id="interactionForm">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+<form id="interactionForm" method="POST" action="{{ route('map.interaction') }}" enctype='multipart/form-data'>
+    @csrf
     <input type="hidden" id="interaction" />
     <input type="hidden" name="lat" id='lat'/>
     <input type="hidden" name="lng" id='lng'/>
+
     <div class="modal-body">
         <fieldset class="interation">
             <legend class="interation">@lang('frontoffice.interationform.user_info')</legend>
@@ -21,7 +22,7 @@
                 </div>
             </div>
         </fieldset>
-        <fieldset class="interation">
+        <fieldset class="interation" style="margin-bottom: 0px !important;">
             <legend class="interation">@lang('frontoffice.interationform.interation_info')</legend>
             <div class="row">
                 <div class="col-sm-12 col-md-5">
@@ -34,6 +35,15 @@
                 </div>
             </div>
         </fieldset>
+        <div class="custom-breadcrumb" class="col-12">
+            <ul>
+                <li title="@lang('frontoffice.uploadform.addPDF')"><a href="#" id="showFiles"><i class="text-danger fas fa-file-pdf"></i></a></li>
+                <li title="@lang('frontoffice.uploadform.addImage')"><a href="#" id="showImages"><i class="text-warning fas fa-image"></i></a></li>
+                <li title="@lang('frontoffice.uploadform.addVideo')"><a href="#" id="showVideos"><i class="fas fa-video"></i></a></li>
+                <li title="@lang('frontoffice.uploadform.addLink')"><a href="#" id="showLinks"><i class="text-danger fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        @include('map.createFiles')
     </div>
     <div class="modal-footer">
         <button type="submit" id="saveBtn" class="btn btn-primary">@lang('fullstack.send')</a>

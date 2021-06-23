@@ -29,7 +29,7 @@ class Interations extends Model
             'birthday' => null,
             'title' => null,
             'description' => null,
-            'active' => 1,
+            'active' => 0,
         ]);
     }
 
