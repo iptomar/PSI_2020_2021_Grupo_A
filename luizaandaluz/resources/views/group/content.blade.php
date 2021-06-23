@@ -1,7 +1,7 @@
 <div class="row">
     <div class="img-container">
 
-        <div class="img-title">
+        <div class="group-title">
             <span>@lang('frontoffice.group')<span>
         </div>
     </div>

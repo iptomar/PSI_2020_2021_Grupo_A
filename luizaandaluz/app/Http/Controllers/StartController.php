@@ -31,8 +31,8 @@ class StartController extends Controller
     private function camilo(){
         return [
             'name'=>'Camilo Diego Bechir Sauane',
-            'website'=>['url'=>'https://www.instagram.com/diego_bs8/','name'=>'Instagram'],
-            'image'=>'',
+            'website'=>['url'=>'https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/4d724066-2295-43c1-9896-9ade6efaaafb?view=html','name'=>'Curriculum Vitae'],
+            'image'=>asset('imagem/Alunos/camilo.jpg'),
             'birthday'=>'1998-07-29 ',
             'desc'=>lang('group.camilo'),
             'number'=>'21085',
@@ -43,7 +43,7 @@ class StartController extends Controller
         return [
             'name'=>'Diogo Polidoro',
             'website'=>['url'=>'https://www.instagram.com/diogorpolidoro/','name'=>'Instagram'],
-            'image'=>'',
+            'image'=>asset('imagem/Alunos/diogo.jpeg'),
             'birthday'=>'1997-11-23',
             'desc'=>lang('group.diogo'),
             'number'=>'20752',
@@ -65,7 +65,11 @@ class StartController extends Controller
         return [
             'name'=>'André José Gonçalves Ramos',
             'website'=>['url'=>'','name'=>''],
+<<<<<<< HEAD
             'image'=>'',
+=======
+            'image'=>asset('imagem/Alunos/andre.jpeg'),
+>>>>>>> ef1ab97ecbb6d84a78012cb3a3168c81c1e49cab
             'birthday'=>'1999-10-15',
             'desc'=>lang('group.andre'),
             'number'=>'20710',
@@ -87,8 +91,13 @@ class StartController extends Controller
         return [
             'name'=>'',
             'website'=>['url'=>'','name'=>''],
+<<<<<<< HEAD
             'image'=>'',
             'birthday'=>'',
+=======
+            'image'=>asset('imagem/Alunos/pedro.jpeg'),
+            'birthday'=>'1998-10-29',
+>>>>>>> ef1ab97ecbb6d84a78012cb3a3168c81c1e49cab
             'desc'=>lang('group.pedro'),
             'number'=>'',
         ];
@@ -98,7 +107,7 @@ class StartController extends Controller
         return [
             'name'=>'Jéssica Ribeiro Maria',
             'website'=>['url'=>'','name'=>''],
-            'image'=>'',
+            'image'=>asset('imagem/Alunos/jessica.jpg'),
             'birthday'=>'1999-02-11',
             'desc'=>lang('group.jessica'),
             'number'=>'21074',
@@ -107,12 +116,12 @@ class StartController extends Controller
 
     private function flavio(){
         return [
-            'name'=>'',
+            'name'=>'Flavio Oliveira',
             'website'=>['url'=>'','name'=>''],
-            'image'=>'',
-            'birthday'=>'',
+            'image'=>asset('imagem/Alunos/flavio.jpg'),
+            'birthday'=>'1997-05-13',
             'desc'=>lang('group.flavio'),
-            'number'=>'',
+            'number'=>'21425',
         ];
     }
 

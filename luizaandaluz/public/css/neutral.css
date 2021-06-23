@@ -336,7 +336,7 @@
     ##Screen = B/w 481px to 767px
   */
 
-  @media  (max-width: 767px) {
+  @media  (max-width: 699px) {
 
     body{
         width: max-content;
@@ -360,20 +360,35 @@
         top:45%; left: 18%;
         padding: 2px;
     }
+
+    .img-container .group-title{
+        text-align: center;
+        font-family: 'HerrVonMuellerhoff-Regular';
+    }
+
+    .group-title span{
+        font-size: 154px;
+        font-weight: bold;
+    }
+
+    .card.foundation{
+        border-radius: 15%;
+        width: 300px;
+        background-color: transparent;
+    }
   }
 
   @media only screen and (min-width: 700px) {
     .img-container{
             width: 100%;
-            background-position: center bottom;
-            background-size: cover;
+            background-position: left top;
             background-repeat: no-repeat;
     }
 
     .img-container{
-        height: 400px;
+        height: 450px;
         background-image: url(../imagem/group.png);
-        background-position: center;
+        zoom: 1.2;
     }
 
     .img-container .img-title{
@@ -384,15 +399,22 @@
         font-family: 'HerrVonMuellerhoff-Regular';
     }
 
+    .img-container .group-title{
+        position: absolute;
+        left: 90%; top: 10%;
+        transform: translate(-90%, -10%);
+        width: 33%; height: auto;
+        font-family: 'HerrVonMuellerhoff-Regular';
+    }
+
     .img-title span{
         font-size: 154px;
         font-weight: bold;
     }
 
-    .card.foundation{
-        border-radius: 15%;
-        margin-top: -70px;
-        background-color: transparent;
+    .group-title span{
+        font-size: 154px;
+        font-weight: bold;
     }
 
     .card.history{
@@ -404,4 +426,13 @@
         border-radius: 10%;
         background-color: transparent;
     }
+
+    .card.foundation{
+        border-radius: 15%;
+        margin-top: -70px;
+        background-color: transparent;
+    }
+
 }
+
+
