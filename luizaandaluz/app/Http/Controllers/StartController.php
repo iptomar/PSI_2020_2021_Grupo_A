@@ -31,7 +31,7 @@ class StartController extends Controller
     private function camilo(){
         return [
             'name'=>'Camilo Diego Bechir Sauane',
-            'website'=>['url'=>'https://www.instagram.com/diego_bs8/','name'=>'Instagram'],
+            'website'=>['url'=>'https://europa.eu/europass/eportfolio/api/eprofile/shared-profile/4d724066-2295-43c1-9896-9ade6efaaafb?view=html','name'=>'Curriculum Vitae'],
             'image'=>asset('imagem/Alunos/camilo.jpg'),
             'birthday'=>'1998-07-29 ',
             'desc'=>lang('group.camilo'),
