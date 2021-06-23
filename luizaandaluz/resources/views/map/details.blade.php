@@ -33,7 +33,7 @@
                         <div class="card">
                             <div class="card-header" id="heading{{ $key }}" style="padding: 0px !important; background-color:lightgrey;">
                                 <h4 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapse{{$key}}" aria-expanded="true" aria-controls="collapse{{$key}}">
+                                    <button class="btn btn-link btn-block text-left" onclick="stopVideo();stopYoutube();" type="button" data-toggle="collapse" data-target="#collapse{{$key}}" aria-expanded="true" aria-controls="collapse{{$key}}">
                                         @lang('frontoffice.details-'.$key)
                                     </button>
                                 </h4>
