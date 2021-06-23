@@ -1,6 +1,6 @@
 <div class="row">
     <div class="img-container">
-        <div class="img-title">
+        <div class="img-title" style="top: 25% !important; transform:translate(-90%,-25%)">
             <span>@lang('frontoffice.contact')<span>
         </div>
     </div>

@@ -194,6 +194,8 @@ $('#addvideo').on('click',function(){
     code += '</div>';
     code += '</div>';
     $('#videos').append(code);
+    getVideos();
+
 });
 
 $('#addlink').on('click',function(){
@@ -288,18 +290,19 @@ function stopOtherYoutube(element){
 function stopVideo(){
     var video = $("video");
     $.each(video,function(i,v){
-        $tmp = $(v).attr("src");
-        $(v).attr("src","");
-        $(v).attr("src",$tmp);
-    })
+        v.pause();
+        v.removeAttribute('src');
+        v.load();
+    });
 }
+
 function stopOtherVideo(element){
     var video = $("video");
     $.each(video,function(i,v){
         if(v != element){
-            $tmp = $(v).attr("src");
-            $(v).attr("src","");
-            $(v).attr("src",$tmp);
+            v.pause();
+            v.removeAttribute('src');
+            v.load();
         }
     });
 }

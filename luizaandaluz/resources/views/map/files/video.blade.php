@@ -2,7 +2,7 @@
     <div class="carousel-inner">
         @foreach ($file as $index=>$video)
             <div class="carousel-item {{ $index==0 ? 'active' : '' }}" style="text-align: center">
-                <video width="auto" height="auto" controls onplay="">
+                <video width="auto" height="auto" controls>
                     <source src="{{ asset('files/'.$video['filepath']) }}" type="video/{{ substr($video['filepath'],Str::length($video['filepath'])-3) }}">
                 </video>
             </div>
