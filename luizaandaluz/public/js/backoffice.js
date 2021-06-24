@@ -39,8 +39,6 @@ $('.main-sidebar').on('mouseover mouseout',function(event){
             $('a.brand-link').css('background-image', 'url("'+url+'/imagem/FAVICON-LACC-GRIZ.png")');
         }
     }
-
-    //console.log($('a.brand-link').parent(),$('a.brand-link').parent().width());
 });
 
 
