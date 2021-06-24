@@ -32,7 +32,8 @@ class InterationsController extends Controller
     }
 
     public function getLocations(){
-        $locations = Locations::all();
+        $activeLocation =  Interations::where('active',1)->pluck('location');
+        $locations = Locations::whereIn('uuid',$activeLocation)->get();
         $arr = [];
         foreach ($locations as $loc){
             $arr[] = [
@@ -45,7 +46,7 @@ class InterationsController extends Controller
     }
 
     public function getInterations($id){
-        $interations = Interations::where('location',$id)->select('uuid','location','name','title','created_at')->get();
+        $interations = Interations::where('location',$id)->where('active',1)->select('uuid','location','name','title','created_at')->get();
         $arr = [];
         foreach ($interations as $int){
             $arr[] = [

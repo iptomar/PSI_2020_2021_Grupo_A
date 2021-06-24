@@ -377,3 +377,12 @@ legend.interation {
 .required{
     border: 1px solid rgba(254,184,28,0.8);
 }
+
+.carousel-item{
+    text-align: -webkit-center;
+}
+
+.carousel-item img{
+    height: 250px;
+    width: auto !important;
+}

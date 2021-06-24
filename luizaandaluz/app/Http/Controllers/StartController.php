@@ -25,6 +25,7 @@ class StartController extends Controller
             $this->oscar(),
             $this->pedro(),
             $this->samuel(),
+            $this->professor(),
         ];
     }
 
@@ -54,7 +55,7 @@ class StartController extends Controller
         return [
             'name'=>'Óscar Arcizet Campos',
             'website'=>['url'=>'https:\\cv-oscar.unicaos.eu','name'=>'Portfolio'],
-            'image'=>'',
+            'image'=>asset('imagem/Alunos/oscar.jpg'),
             'birthday'=>'1989-04-19',
             'desc'=>lang('group.oscar'),
             'number'=>'21997',
@@ -80,7 +81,7 @@ class StartController extends Controller
         return [
             'name'=>'Samuel Leal Gomes Luis',
             'website'=>['url'=>'https://github.com/samueluis','name'=>'Git'],
-            'image'=>'',
+            'image'=>asset('imagem/Alunos/samuel.jpg'),
             'birthday'=>'1998-05-15',
             'desc'=>lang('group.samuel'),
             'number'=>'21461',
@@ -126,6 +127,13 @@ class StartController extends Controller
     }
 
     private function professor(){
-
+        return [
+            'name'=> 'Engenheiro Paulo A. G. Santos',
+            'website'=>['url'=>'https://www.linkedin.com/in/pauloagsantos','name'=>'Linkedin'],
+            'image'=>asset('imagem/Alunos/professor.jpg'),
+            'birthday'=>'',
+            'desc'=>lang('group.professor'),
+            'number'=>'',
+        ];
     }
 }

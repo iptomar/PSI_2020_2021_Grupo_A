@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "e3276689-925a-4401-82ec-9db7a26744d8",
+		"name": "LuizaAndaluz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Localizacoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://luiza-andaluz.unicaos.eu/map/locations",
+					"protocol": "https",
+					"host": [
+						"luiza-andaluz",
+						"unicaos",
+						"eu"
+					],
+					"path": [
+						"map",
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Interacoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://luiza-andaluz.unicaos.eu/map/interations/8f18f2d0-d478-11eb-8c86-9828a6121f4b",
+					"protocol": "https",
+					"host": [
+						"luiza-andaluz",
+						"unicaos",
+						"eu"
+					],
+					"path": [
+						"map",
+						"interations",
+						"8f18f2d0-d478-11eb-8c86-9828a6121f4b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modal_Interacao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://luiza-andaluz.unicaos.eu/map/interation/8f4e3760-d478-11eb-a4d5-9828a6121f4b",
+					"protocol": "https",
+					"host": [
+						"luiza-andaluz",
+						"unicaos",
+						"eu"
+					],
+					"path": [
+						"map",
+						"interation",
+						"8f4e3760-d478-11eb-a4d5-9828a6121f4b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

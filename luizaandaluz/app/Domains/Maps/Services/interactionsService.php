@@ -24,9 +24,9 @@ class interactionsService
             $session->commitTransaction();
         } catch(Exception $e) {
             $session->abortTransaction();
-            return ['bg-danger'=>['title'=>'Error','text'=>lang('frontoffice.interation-fail')]];
+            return ['bg-danger'=>['title'=>lang('fullstack.error'),'text'=>lang('frontoffice.interation-fail')]];
         }
-        return ['bg-success'=>['title'=>'Success','text'=>lang('frontoffice.interation-success')]];
+        return ['bg-success'=>['title'=>lang('fullstack.success'),'text'=>lang('frontoffice.interation-success')]];
     }
 
     private function createLocation($input){
@@ -60,7 +60,7 @@ class interactionsService
             }
         }
 
-        $path = public_path().'\\files\\'.$interation->uuid;
+        $path = public_path().'/files/'.$interation->uuid;
 
         if(!File::exists($path)){
             File::makeDirectory($path);

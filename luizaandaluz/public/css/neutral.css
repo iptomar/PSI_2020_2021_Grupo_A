@@ -336,7 +336,7 @@
     ##Screen = B/w 481px to 767px
   */
 
-  @media  (max-width: 699px) {
+  @media  (max-width: 767px) {
 
     body{
         width: max-content;
