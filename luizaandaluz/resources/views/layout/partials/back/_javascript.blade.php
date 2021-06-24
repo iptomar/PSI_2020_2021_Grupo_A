@@ -29,12 +29,7 @@
 <script src="{{ asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ asset('dist/js/adminlte.js') }}"></script>
-<script src="{{ asset('plugins/jquery-datatables/datatables.min.js') }}"></script>
-<script>
-    var datatable = "{{ json_encode(lang('backoffice.datatable')) }}"
-    var logoImg = "{!! asset('imagem/LOGO-LACC.png') !!}"
-    var faviconImg = "{!! asset('imagem/FAVICON-LACC-GRIZ.png') !!}"
-</script>
-<script src="/js/backoffice.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.25/datatables.min.js"></script>
 
 @yield('scripts')

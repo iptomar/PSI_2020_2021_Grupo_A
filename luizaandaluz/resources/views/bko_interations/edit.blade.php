@@ -13,7 +13,7 @@
 </div>
 <div class="card card-primary card-outline card-outline-tabs">
     <div class="card-body">
-        {{ Form::open(array('route' => array('backoffice.user.update',$mod->uuid),'method' => 'post')) }}
+        {{ Form::open(array('route' => array('backoffice.interation.update',$mod->uuid),'method' => 'post')) }}
             <input type="hidden" name='uuid' value="{{ $mod->uuid }}">
             @csrf
             <div class="modal-body">

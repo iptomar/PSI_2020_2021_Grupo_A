@@ -1,52 +1,25 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\back;
 
-use App\Domains\Maps\Services\interactionsService;
+use App\Http\Controllers\Controller;
 use App\Models\Maps\Files;
 use App\Models\Maps\Interations;
-use App\Models\Maps\Locations;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use Session;
 use stdClass;
+use File;
 
-class InterationsController extends Controller
+class InterationController extends Controller
 {
-    private $service;
-    public function __construct(){
-        $this->service = new interactionsService();
-    }
+    public function index(){
+        $interations = Interations::all()->sortBy('active');
 
-    public function index()
-    {
-        return view('map.index');
-    }
-
-    public function store(Request $request)
-    {
-        $message = $this->service->save($request->input(),$request->file());
-        Session::flash('message', $message);
-
-        return redirect()->back();
-    }
-
-    public function getLocations(){
-        $activeLocation =  Interations::where('active',1)->pluck('location');
-        $locations = Locations::whereIn('uuid',$activeLocation)->get();
-        $arr = [];
-        foreach ($locations as $loc){
-            $arr[] = [
-                'id' => $loc->uuid,
-                'lat' => $loc->lat,
-                'lng' => $loc->lng,
-            ];
-        }
-        return response()->json($arr);
+        return view('bko_interations.index')->with('interations',$interations);
     }
 
     public function getInterations($id){
-        $interations = Interations::where('location',$id)->where('active',1)->select('uuid','location','name','title','created_at')->get();
+        $interations = Interations::where('location',$id)->select('uuid','location','name','title','created_at')->get();
         $arr = [];
         foreach ($interations as $int){
             $arr[] = [
@@ -62,12 +35,13 @@ class InterationsController extends Controller
     }
 
     public function getInteration($id){
-        $interation = Interations::where('uuid',$id)->select('uuid','location','name','birthday','title','description')->first();
+        $interation = Interations::where('uuid',$id)->select('uuid','location','email','name','birthday','title','description')->first();
 
         $int = [
             'uuid' => $interation->uuid,
             'name' => $interation->name,
             'title' => $interation->title,
+            'email' => $interation->email,
             'description' => $interation->description,
             'age' => Carbon::parse($interation->birthday)->age,
         ];
@@ -112,9 +86,29 @@ class InterationsController extends Controller
             }
         }
 
-        return view('map.details')->with('interation',$int)->with('files',$files);
+        return view('bko_interations.details')->with('interation',$int)->with('files',$files);
     }
 
+    public function approve($id){
+        $interation = Interations::where('uuid',$id)->first();
 
+        $interation->active = 1;
+        $interation->save();
+
+        return redirect()->route('backoffice.interation.list');
+    }
+
+    public function destroy($id){
+        $interation = Interations::where('uuid',$id)->first();
+
+        $files = Files::where('interation',$id)->get();
+
+        $path = public_path().DIRECTORY_SEPARATOR.'files'.DIRECTORY_SEPARATOR.$id;
+        dd($interation,$files,$path);
+        array_map('unlink', glob("$path/*"));
+
+        rmdir($path);
+        $interation->delete();
+        return redirect()->route('backoffice.interation.list');
+    }
 }
-

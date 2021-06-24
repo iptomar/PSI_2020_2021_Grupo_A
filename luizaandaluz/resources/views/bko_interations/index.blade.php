@@ -1,17 +1,18 @@
 @extends('layout.backoffice')
 
-@section('title', lang('backoffice.side-mod'))
+@section('title', lang('backoffice.side-interation'))
 
 @section('css')
 
 @endsection
 
-@section('dashTitle', lang('backoffice.side-mod'))
+@section('dashTitle', lang('backoffice.side-interation'))
 
 @section('content')
-    @include('layout.partials.back._modal')
-    @include('users.show')
 
+
+    @include('bko_interations.show')
+    @include('layout.partials.back._modal')
 @endsection
 @section('scripts')
 <script>

@@ -241,10 +241,6 @@ function fileSelect(event){
     );
 }
 
-function check(){
-    console.log();
-}
-
 function modalDetail(element){
     var action = $(element).closest('tr').data('action');
 

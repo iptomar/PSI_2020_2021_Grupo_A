@@ -13,7 +13,7 @@
              with font-awesome or any other icon font library -->
 
         <li class="nav-item has-treeview">
-          <a href="#" class="nav-link text-left">
+          <a href="{{ route('backoffice.interation.list') }}" class="nav-link text-left">
             <i class="nav-icon fas fa-envelope"></i>
             <p class="font-weight-bold">
                 @lang('backoffice.side-interation')
