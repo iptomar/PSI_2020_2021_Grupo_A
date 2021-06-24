@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(testLocations::class);
+        //$this->call(testLocations::class);
+        $this->call(superAdminSeeder::class);
     }
 }
