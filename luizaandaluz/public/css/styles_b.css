@@ -180,3 +180,28 @@
     margin-left: 8px;
     font-family: 'HerrVonMuellerhoff-Regular';
 }
+
+body.sidebar-collapse > .brand-link{
+    width: 1000px !important;
+}
+
+.btn-custom{
+    border-radius: 5px;
+    border: 1px solid rgba(254,184,28,0.8);
+    color: rgba(254,184,28,0.8);
+    background-color: #007bff;
+}
+.btn-custom:hover{
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: rgba(254,184,28,0.8);
+    color: #007bff;
+}
+
+.btn-custom i{
+    margin-right:1px ;
+}
+
+.card-la.card-outline{
+    border-top: 3px solid rgba(254,184,28,0.8);;
+}
