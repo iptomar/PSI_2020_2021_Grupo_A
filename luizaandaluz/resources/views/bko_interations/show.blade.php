@@ -25,7 +25,7 @@
                                     <i class="text-success fa fa-check mr-3"></i>
                                 @endif
                                 <i class="text-danger fa fa-trash">
-                                    <a onclick="confirm('Are you sure?')" title="{{ lang('backoffice.reject') }}" href="{{ route('backoffice.interation.destroy',$interation->uuid) }}"></a>
+                                    <a title="{{ lang('backoffice.reject') }}" href="{{ route('backoffice.interation.destroy',$interation->uuid) }}"></a>
                                 </i>
                             </td>
                         </tr>
