@@ -25,3 +25,6 @@
 
 <script src="/js/toast.js"></script>
 @endsection
+@php
+    \Session::forget('message');
+@endphp

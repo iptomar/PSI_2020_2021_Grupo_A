@@ -28,7 +28,7 @@
 </div>
 
 
-<div class="row">
+{{-- <div class="row">
     <div class="col-6">
         <h1>@lang('frontoffice.detailsTitle')</h1>
         <h4>@lang('frontoffice.detailsDescription')</h4>
@@ -63,4 +63,4 @@
             <button type="submit" class="btn btn-primary">@lang('frontoffice.submit')</button>
         </form>
     </div>
-</div>
+</div> --}}

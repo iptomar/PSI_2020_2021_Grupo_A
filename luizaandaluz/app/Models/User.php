@@ -17,8 +17,10 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
+        'uuid',
         'name',
         'iso_lang',
+        'role',
         'email',
         'password',
     ];
@@ -29,7 +31,9 @@ class User extends Authenticatable
      * @var array
      */
     protected $visible = [
+        'uuid',
         'name',
+        'role',
         'iso_lang',
         'email',
     ];

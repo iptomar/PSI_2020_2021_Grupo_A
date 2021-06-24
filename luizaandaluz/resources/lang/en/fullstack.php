@@ -11,4 +11,7 @@ return [
     'list' =>  'List',
     'create' =>  'Create',
     'date' =>  'Date',
+    'error' =>  'Error',
+    'success' =>  'Success',
+    'update' =>  'Update',
 ];

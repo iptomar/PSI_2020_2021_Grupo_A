@@ -205,3 +205,16 @@ body.sidebar-collapse > .brand-link{
 .card-la.card-outline{
     border-top: 3px solid rgba(254,184,28,0.8);;
 }
+
+.required{
+    border: 1px solid rgba(254,184,28,0.8);
+}
+
+.carousel-item{
+    text-align: -webkit-center;
+}
+
+.carousel-item img{
+    height: 250px;
+    width: auto !important;
+}

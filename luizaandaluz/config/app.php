@@ -177,7 +177,8 @@ return [
         \Jenssegers\Mongodb\Session\SessionServiceProvider::class,
         \Jenssegers\Mongodb\MongodbServiceProvider::class,
         \Jenssegers\Agent\AgentServiceProvider::class,
-        App\Providers\AgentServiceProvider::class
+        App\Providers\AgentServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
     ],
 
     /*
@@ -231,6 +232,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Agent' => Jenssegers\Agent\Facades\Agent::class,
+        'Form' => Collective\Html\FormFacade::class,
+        'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
