@@ -5,10 +5,11 @@ namespace App\Http\Controllers\back;
 use App\Http\Controllers\Controller;
 use App\Models\Maps\Files;
 use App\Models\Maps\Interations;
+use App\Models\Maps\Locations;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use stdClass;
-use File;
+use Illuminate\Filesystem\Filesystem;
 
 class InterationController extends Controller
 {
@@ -99,16 +100,29 @@ class InterationController extends Controller
     }
 
     public function destroy($id){
-        $interation = Interations::where('uuid',$id)->first();
+        $iteration = Interations::where('uuid',$id)->first();
+        $location = Locations::where('uuid',$iteration->location)->first();
 
         $files = Files::where('interation',$id)->get();
 
         $path = public_path().DIRECTORY_SEPARATOR.'files'.DIRECTORY_SEPARATOR.$id;
-        dd($interation,$files,$path);
-        array_map('unlink', glob("$path/*"));
 
-        rmdir($path);
-        $interation->delete();
+        if(file_exists($path)){
+            array_map('unlink', glob("$path/*"));
+
+            rmdir($path);
+        }
+
+        foreach($files as $file){
+            $file->delete();
+        }
+
+        $iteration->delete();
+
+        $hasIterations = Interations::where('location',$location->uuid)->first();
+        if(null==$hasIterations)
+            $location->delete();
+
         return redirect()->route('backoffice.interation.list');
     }
 }
