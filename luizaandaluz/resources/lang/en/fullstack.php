@@ -14,4 +14,5 @@ return [
     'error' =>  'Error',
     'success' =>  'Success',
     'update' =>  'Update',
+    'teacher' =>  'Teacher',
 ];

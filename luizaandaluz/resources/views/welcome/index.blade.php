@@ -48,6 +48,8 @@
     </style>
 @endsection
 
+@section('title', str_replace('<br />','',lang('fullstack.welcome')))
+
 @section('content')
     <img id="img-ass" src="{{ asset('imagem/ASS-LACC-GRIZ.png') }}" alt="Luiza Andaluz Signature" />
     <img id="img-logo" src="{{ asset('imagem/FAVICON-LACC-GRIZ.png') }}" alt="Luiza Andaluz Logo" />

@@ -14,6 +14,13 @@
         @endif
         <div class="col-sm-12 col-md-3 d-flex align-items-stretch justify-content-md-center">
             <div class="card foundation card-vision" style="margin-top: 0%; box-shadow:0 0 1px rgb(255 0 0 / 100%), 0 1px 3px rgb(0 0 0 / 100%)">
+                @if($index == 8)
+                    <div class="ribbon-wrapper ribbon-lg ">
+                        <div class="ribbon bg-yellow">
+                              @lang('fullstack.teacher')
+                        </div>
+                    </div>
+                @endif
                 <div class="card-header text-center">
                     <img src="{{$aluno['image']}}" style="max-width: 100px;" />
                 </div>

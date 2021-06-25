@@ -68,6 +68,8 @@
 </style>
 @endsection
 
+@section('title', str_replace('<br />','',lang('backoffice.sign_in')))
+
 @php( $login_url = View::getSection('login_url') ?? config('adminlte.login_url', 'login') )
 
 
