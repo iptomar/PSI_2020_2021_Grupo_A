@@ -66,11 +66,7 @@ class StartController extends Controller
         return [
             'name'=>'André José Gonçalves Ramos',
             'website'=>['url'=>'','name'=>''],
-<<<<<<< HEAD
-            'image'=>'',
-=======
             'image'=>asset('imagem/Alunos/andre.jpeg'),
->>>>>>> ef1ab97ecbb6d84a78012cb3a3168c81c1e49cab
             'birthday'=>'1999-10-15',
             'desc'=>lang('group.andre'),
             'number'=>'20710',
@@ -90,17 +86,12 @@ class StartController extends Controller
 
     private function pedro(){
         return [
-            'name'=>'',
+            'name'=>'Pedro Rafael Magalhães Gomes',
             'website'=>['url'=>'','name'=>''],
-<<<<<<< HEAD
-            'image'=>'',
-            'birthday'=>'',
-=======
             'image'=>asset('imagem/Alunos/pedro.jpeg'),
             'birthday'=>'1998-10-29',
->>>>>>> ef1ab97ecbb6d84a78012cb3a3168c81c1e49cab
             'desc'=>lang('group.pedro'),
-            'number'=>'',
+            'number'=>'21279',
         ];
     }
 
