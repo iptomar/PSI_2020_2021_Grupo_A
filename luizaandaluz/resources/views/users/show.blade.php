@@ -20,7 +20,7 @@
                         <tr data-action="{{ route('backoffice.user.edit',$user->uuid) }}" style="cursor: pointer">
                             <td ><a class="btn btn-edit btn-sm btn-row" href="#">{{ $user->name }}</a></td>
                             <td><a class="btn btn-edit btn-sm btn-row" href="#">{{ $user->email }}</a></td>
-                            <td><a href="{{ route('backoffice.user.destroy',$user->uuid) }}"><i class="text-danger fa fa-trash"></i></a></td>
+                            <td><a class="btn btn-sm btn-row" href="#"></a><i class="text-danger fa fa-trash"><a href="{{ route('backoffice.user.destroy',$user->uuid) }}"></a></i></td>
                         </tr>
                     @endforeach
                 </tbody>

@@ -24,9 +24,9 @@
                                 @if($interation->active)
                                     <i class="text-success fa fa-check mr-3"></i>
                                 @endif
-                                <a title="{{ lang('backoffice.reject') }}" href="{{ route('backoffice.interation.destroy',$interation->uuid) }}">
-                                    <i class="text-danger fa fa-trash"></i>
-                                </a>
+                                <i class="text-danger fa fa-trash">
+                                    <a title="{{ lang('backoffice.reject') }}" href="{{ route('backoffice.interation.destroy',$interation->uuid) }}"></a>
+                                </i>
                             </td>
                         </tr>
                     @endforeach
