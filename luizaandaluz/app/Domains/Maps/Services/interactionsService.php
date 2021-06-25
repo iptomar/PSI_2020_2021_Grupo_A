@@ -40,12 +40,9 @@ class interactionsService
     private function createInteraction($input,$location){
         $interaction = Interations::getInteration();
         $interaction->location = $location->uuid;
-<<<<<<< HEAD
-=======
         $interaction->name = $input['name'];
         $interaction->email = $input['email'];
         $interaction->birthday = $input['date'];
->>>>>>> ef1ab97ecbb6d84a78012cb3a3168c81c1e49cab
         $interaction->title = $input['title'];
         $interaction->description = $input['description'];
         $interaction->save();

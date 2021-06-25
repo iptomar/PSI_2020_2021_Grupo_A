@@ -10,5 +10,4 @@ return [
     'samuel'=>'Tudo o que eu tenho a dizer sobre mim está neste <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">link</a>',
     'pedro'=>'Nada a dizer, apenas trabalhar......',
     'professor'=>'O Grupo agradece todo o apoio prestado pelo o professor, neste semestre do ano letivo 2020/2021, na realização deste projeto'
-
 ];

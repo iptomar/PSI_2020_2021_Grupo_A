@@ -26,22 +26,10 @@ L.tileLayer('https://api.maptiler.com/maps/streets/{z}/{x}/{y}.png?key=IXBp03awR
 updateMarkers();
 
 map.on('click',function(e){
-<<<<<<< HEAD
-    /*removeMarkers();
-    L.marker(e.latlng).addTo(map);
-    openModel(e.latlng);*/
-    L.Routing.control({
-        waypoints: [
-          L.latLng(57.74, 11.94),
-          L.latLng(57.6792, 11.949)
-        ]
-      }).addTo(map);
-=======
     removeMarkers();
     L.marker(e.latlng,{icon: customIcon}).on('click', markerClick).addTo(map);
     $('#list_interation tbody tr').remove();
     openModel(e.latlng);
->>>>>>> ef1ab97ecbb6d84a78012cb3a3168c81c1e49cab
 })
 
 function openModel(latlng){
