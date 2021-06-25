@@ -15,4 +15,5 @@ return [
     'success' =>  'Success',
     'update' =>  'Update',
     'teacher' =>  'Teacher',
+    'team-leader'=> 'Team Leader'
 ];
