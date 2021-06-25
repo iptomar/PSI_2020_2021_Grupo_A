@@ -69,5 +69,5 @@
 <div class="modal-footer">
     <a href="{{ route('backoffice.interation.approve',$interation['uuid'])  }}" class="btn btn-primary mr-5">@lang('backoffice.accept')</a>
 
-    <a href="{{ route('backoffice.interation.destroy',$interation['uuid']) }}" class="btn btn-danger">@lang('backoffice.reject')</a>
+    <a onclick="confirm(lang('backoffice.areyousure'))" href="{{ route('backoffice.interation.destroy',$interation['uuid']) }}" class="btn btn-danger">@lang('backoffice.reject')</a>
 </div>

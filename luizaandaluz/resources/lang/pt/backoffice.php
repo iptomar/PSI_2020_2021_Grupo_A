@@ -41,4 +41,7 @@ return [
     'modEditFail'=>'Moderador não foi editado, devido valores incorretos',
     'accept'=>'Aceitar',
     'reject'=>'Rejeitar',
+    'areyousure'=>'Esta ação irá apagar qualquer registo desta iteração, deseja apagar?',
+    'sign_in'=>'<br />Iniciar Sessão',
+    'return'=>'<br />Página Inicial'
 ];

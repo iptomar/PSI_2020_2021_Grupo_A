@@ -43,4 +43,5 @@ return [
     'modEditFail'=>'Moderator was\'t edited, because of poor values inserted',
     'accept'=>'Accept',
     'reject'=>'Reject',
+    'areyousure'=>'This action will erase all data from this iteration, do you wish to erase?'
 ];

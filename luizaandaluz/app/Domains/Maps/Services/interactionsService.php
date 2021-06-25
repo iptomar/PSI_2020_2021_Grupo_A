@@ -56,8 +56,11 @@ class interactionsService
                 $this->createFile($interation->uuid,$input['urltitle'][$index],$url,'l');
             }
         }
-
-        $path = public_path().'/files/'.$interation->uuid;
+        $path = public_path().DIRECTORY_SEPARATOR.'files';
+        if(!File::exists($path)){
+            File::makeDirectory($path);
+        }
+        $path .= DIRECTORY_SEPARATOR.$interation->uuid;
 
         if(!File::exists($path)){
             File::makeDirectory($path);
